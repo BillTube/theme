@@ -1,6 +1,5 @@
-# CyTube theme
-I guess you are interested in using my CyTube Theme.
-It's a mess so just contact me on CyTube instead :)
+# Bill's Custom CyTube Theme
+The git for my cytube theme, it's a mess so just contact me on CyTube if you want to use it :)
 You can usually find me over at https://cytu.be/r/southparkhd
 
 # Issues
