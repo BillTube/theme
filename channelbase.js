@@ -1,7 +1,6 @@
 /*
-|Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7)
-|original file by kenblu24
-|Modified/fucked by BILL , You can find me on the southparkhd channel
+|Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7) and kenblu24
+|Theme by BILL(2) , You can find me on the southparkhd channel
 */
 $('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />"); 
 console.log("ranscript");
@@ -20,9 +19,6 @@ console.log("ranscript");
 /*player skin*/
 $('head').append("<link rel='stylesheet' href='//rawgit.com/BillTube/theme/gh-pages/base.css' />");
 $('head').append("<link rel='stylesheet' href='//rawgit.com/BillTube/theme/gh-pages/polyzor.css' />");
-//$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/base.css' />");
-//$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/theme.css' />");
-
 $("#videowrap").addClass("vjs-polyzor-skin");
 $(".server-msg-reconnect").addClass("fa fa-plug");
 $(".server-msg-reconnect").text("");
@@ -711,5 +707,10 @@ window.setInterval(function(){
 });
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
+$("body").addClass('fluid');
+fluidLayout();
+setLayout();
+scrollChat();
+scrollQueue();
 
 LOADED=true;
