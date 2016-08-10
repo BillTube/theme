@@ -692,7 +692,7 @@ var bgColorArray = ['http://i.imgur.com/zFlCqZP.jpg','http://i.imgur.com/l622wXI
 $('#backg').css('background', 'url(' + selectBG + ')')
 
 
-var vplayer = videojs("ytapiplayer_html5_api")
+var vplayer = videojs("ytapiplayer")
 
 vplayer.on('error', function(e){
 window.setInterval(function(){
