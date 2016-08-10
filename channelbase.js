@@ -80,6 +80,7 @@ $("#pldropdown").after("<ul id='ploptions' class='dropdown-menu' role='menu'></u
 $("#ploptions").append($("#shuffleplaylist"), $("#clearplaylist"), $("#getplaylist"));
 $("#pldropdown").before($("#qlockbtn"));
 $("#main").after($("#scroll-feature"));
+
 $('.username').hover(function(){
     $('.timestamp').css({
         'opacity':'0',
@@ -670,18 +671,18 @@ function scrollerInit() {
         });
  } );
  
-/*
- // POKEMON THEME THING TEST
-$(".nav").append("<img src='http://i.imgur.com/XNIJmE4.gif' id='go' alt='DON'T CLICK' height='42' width='42'>");
-$(document).ready(function () {
-    $("#go").click(function () {
-        $('head').append('<link rel="stylesheet" href="//dl.dropbox.com/s/hgfl8tylkgi16rk/themego.css" type="text/css" />');
-        $("#messagebuffer").append("<img src='http://i.imgur.com/sFGv6ZZ.gif' id='ghas'>");
-    });
-});
-*/
+ scrollbtn = $('<button id="scroll-btn" class="btn btn-sm btn-default" title="Scroll to current item" />')
+  .append('<span class="glyphicon glyphicon-hand-right" />')
+  .prependTo("#ploptions")
+  .on("click", function() {
+	scrollQueue();
+  });
+
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/channels.js");
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/overlay.js");
+var LOADED = (typeof LOADED==="undefined") ? false : true;
+LOADED ? location.reload() : '';
+
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -711,3 +712,4 @@ window.setInterval(function(){
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
 
+LOADED=true;
