@@ -8,6 +8,9 @@ $('#videowrap').hover(function(){
     $('#VideoOverlay').css({
         'opacity':'0',
         'display':'none',
+         $('#final_msg').fadeOut();
+ $('#VideoOverlay').val('')
+}, 10000 );
     });
 });
 
