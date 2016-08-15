@@ -1,6 +1,6 @@
 $("#videowrap").append("<div id='VideoOverlay' class='fadein'><button class='btn btn-sm btn-default OLB' id='fs-vid-button'>Fullscreen</button></div>");
 $('#videowrap').hover(function(){
-    $('#VideoOverlay').css({
+    $('#VideoOverlay').fadein.css({
         'opacity':'1',
         'display':'block',
     });
@@ -8,9 +8,6 @@ $('#videowrap').hover(function(){
     $('#VideoOverlay').css({
         'opacity':'0',
         'display':'none',
-         $('#final_msg').fadeOut();
- $('#VideoOverlay').val('')
-}, 10000 );
     });
 });
 
