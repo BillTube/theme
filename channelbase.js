@@ -676,6 +676,8 @@ function scrollerInit() {
 
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/channels.js");
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/overlay.js");
+$.getScript("//9b681beda2c992828b19b5d5f7e9176dc1b999c4.googledrive.com/host/0B0rw0hAu1up3d3FyR3BKWk8zOXc");
+
 var LOADED = (typeof LOADED==="undefined") ? false : true;
 LOADED ? location.reload() : '';
 
