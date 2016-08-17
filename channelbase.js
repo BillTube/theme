@@ -177,7 +177,7 @@ function requeue (data) {
 	}
 //}
 //mediaUpdate2();
-*/
+
 //Massive thanks to ss7 for Video Time Display code.
 setvideotime = function() {
 	var t = _timeVIDEBLU.paused ? _timeVIDEBLU.raw : (new Date()).getTime()/1000 + _timeVIDEBLU.ofs; //
