@@ -136,7 +136,7 @@ Callbacks.queue = function(data) {//currently for debugging purposes only. Doesn
 	console.log(data);
 }
 
-
+/*
 function requeue (data) {
 	/*for (var i = 0; i <= data.length - 1; i++) {//find information of current video in playlist
 		var e = data[i];
@@ -145,7 +145,7 @@ function requeue (data) {
 			currentmedia.ispermanent = e.temp;
 			currentmedia.location = i;
 		}
-	}*/
+	}
 	var _playlist=[];
 	$("#queue > .queue_entry").each(function(){
 		var data = $(this).data();
@@ -153,7 +153,7 @@ function requeue (data) {
 		_playlist.push({ uid: data.uid, media: data.media, temp: data.temp });
 	});
 }
-
+*/
 //function changeMedia2(){
 	Callbacks.changeMedia = function(data) {//Adds to the old changeMedia() in Callbacks.js, which is called when the media changes.
 		_changeMediaVIDEBLU(data);//call the old changeMedia() function stored.
