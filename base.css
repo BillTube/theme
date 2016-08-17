@@ -1068,7 +1068,7 @@ background: none;
 /* Inputs */
 	/* Text Inputs */
 	input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
-    background-color: hsla(0, 0%, 0%, 0.5)!important;
+    background-color: hsla(0, 0%, 0%, 0.83)!important;
     border-top: 1px solid hsl(0, 0%, 29%);
     color: hsl(0, 3%, 83%);
     -webkit-font-smoothing: antialiased
