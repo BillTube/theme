@@ -129,7 +129,7 @@ if (typeof(_changeMediaVIDEBLU) == 'undefined') { _changeMediaVIDEBLU = Callback
 if (typeof(_playlistVIDEBLU) == 'undefined') { _playlistVIDEBLU = Callbacks.playlist; }
 if (typeof(_queueVIDEBLU) == 'undefined') { _queueVIDEBLU = Callbacks.queue; }
 if (typeof(_mediaupdateVIDEBLU) == 'undefined') { _mediaUpdateVIDEBLU = Callbacks.mediaUpdate; }
-/*
+
 Callbacks.queue = function(data) {//currently for debugging purposes only. Doesn't do anything.
 	_queueVIDEBLU(data);
 	console.log("Called Callbacks.queue");
@@ -152,7 +152,7 @@ function requeue (data) {
 		//var addedby = $(this).attr("title").match(/: (\w+)$/)[1];
 		_playlist.push({ uid: data.uid, media: data.media, temp: data.temp });
 	});
-}
+}*/
 
 //function changeMedia2(){
 	Callbacks.changeMedia = function(data) {//Adds to the old changeMedia() in Callbacks.js, which is called when the media changes.
