@@ -129,14 +129,14 @@ if (typeof(_changeMediaVIDEBLU) == 'undefined') { _changeMediaVIDEBLU = Callback
 if (typeof(_playlistVIDEBLU) == 'undefined') { _playlistVIDEBLU = Callbacks.playlist; }
 if (typeof(_queueVIDEBLU) == 'undefined') { _queueVIDEBLU = Callbacks.queue; }
 if (typeof(_mediaupdateVIDEBLU) == 'undefined') { _mediaUpdateVIDEBLU = Callbacks.mediaUpdate; }
-
+/*
 Callbacks.queue = function(data) {//currently for debugging purposes only. Doesn't do anything.
 	_queueVIDEBLU(data);
 	console.log("Called Callbacks.queue");
 	console.log(data);
 }
 
-/*
+
 function requeue (data) {
 	/*for (var i = 0; i <= data.length - 1; i++) {//find information of current video in playlist
 		var e = data[i];
@@ -153,7 +153,7 @@ function requeue (data) {
 		_playlist.push({ uid: data.uid, media: data.media, temp: data.temp });
 	});
 }
-*/
+
 //function changeMedia2(){
 	Callbacks.changeMedia = function(data) {//Adds to the old changeMedia() in Callbacks.js, which is called when the media changes.
 		_changeMediaVIDEBLU(data);//call the old changeMedia() function stored.
@@ -177,7 +177,7 @@ function requeue (data) {
 	}
 //}
 //mediaUpdate2();
-
+*/
 //Massive thanks to ss7 for Video Time Display code.
 setvideotime = function() {
 	var t = _timeVIDEBLU.paused ? _timeVIDEBLU.raw : (new Date()).getTime()/1000 + _timeVIDEBLU.ofs; //
