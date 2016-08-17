@@ -707,4 +707,3 @@ setLayout();
 scrollChat();
 scrollQueue();
 
-LOADED=true;
