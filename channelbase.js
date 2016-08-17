@@ -136,14 +136,6 @@ Callbacks.queue = function(data) {//currently for debugging purposes only. Doesn
 	console.log(data);
 }
 
-Callbacks.playlist = function(data) {//currently for debugging purposes only. Doesn't do anything.
-	console.log("Called Callbacks.playlist");
-	console.log(data);
-	_playlistVIDEBLU(data);
-	requeue(data);
-	globaLplaylistdata = data;
-	playlistinfo.length = data.length;
-}
 
 function requeue (data) {
 	/*for (var i = 0; i <= data.length - 1; i++) {//find information of current video in playlist
