@@ -702,8 +702,3 @@ window.setInterval(function(){
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
 $("body").addClass('fluid');
-fluidLayout();
-setLayout();
-scrollChat();
-scrollQueue();
-
