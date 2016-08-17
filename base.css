@@ -11,7 +11,9 @@
 #modflair {
  display:none;   
 }
-
+.channel-emote {
+    min-width: 70px;
+}
 body {
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
