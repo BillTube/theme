@@ -1226,7 +1226,7 @@ body {
      font-size: 7pt;
     float: left;
     display: block;
-    opacity: 1;
+    opacity: 0;
     left: 0;
     margin-top: 0px;
     width: 52px;
