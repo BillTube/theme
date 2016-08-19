@@ -1223,19 +1223,28 @@ body {
     font-size: 11pt;
 }
 .timestamp {
-    font-size: 8pt;
-    float: right;
-    display:none;
-    opacity:0;
-    right: 0;
+     font-size: 7pt;
+    float: left;
+    display: block;
+    opacity: 1;
+    left: 0;
+    margin-top: 0px;
+    width: 52px;
     position: absolute;
-    color: #fff;
-    background: #5FBFF9;
-    padding: 2px 8px;
+    color: #d0d0d0;
+    background: rgba(107, 107, 107, 0.58);
+    padding: 1px 4px;
     text-decoration: none;
-    border-radius: 3px;
-    transition: all .15s ease;
-    -webkit-transition: all .15s ease;
+    border-radius: 5px;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    text-overflow: clip;
+    white-space: nowrap;
+    z-index: 1000;
+    overflow: hidden;
+}
+.fadeout{
+  opacity: 1 !important;
 }
 p#currenttitle {
   font-size: 1.1rem;
