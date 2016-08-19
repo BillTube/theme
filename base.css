@@ -1228,7 +1228,7 @@ body {
     display: block;
     opacity: 0;
     left: 0;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 52px;
     position: absolute;
     color: #d0d0d0;
@@ -1575,8 +1575,8 @@ strong.username {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.55);
     cursor: cell;
-    padding-top: 10px;
-    letter-spacing: 1px;
+    padding-top: 0px;
+    letter-spacing: 1.5px;
 }
 	.ch {
 	float: left;
