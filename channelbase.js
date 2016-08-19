@@ -77,15 +77,10 @@ $("#ploptions").append($("#shuffleplaylist"), $("#clearplaylist"), $("#getplayli
 $("#pldropdown").before($("#qlockbtn"));
 $("#main").after($("#scroll-feature"));
 
-$('.username').hover(function(){
-    $('.timestamp').css({
-        'opacity':'0',
-    });
-},function(){
-    $('.timestamp').css({
-        'opacity':'0',
-    });
-});
+$('.username').hover(
+     function(){ $('.timestamp').addClass('fadeout') },
+     function(){ $('.timestamp').removeClass('fadeout') }
+)
 $('#queuecontainer').hover(function(){
     $('#pllength').css({
         'opacity':'0.9',
