@@ -642,7 +642,8 @@ div#videowrap {
 		#showplaylistmanager span:before {content: "Playlists"}
 	/*controls*/
 	.form-control {
-    border: 0px solid #ccc;
+        border: 0px solid #ccc;
+        height: 40px;
 	}
 	#controlsrow {
 		margin: 0;
@@ -1070,8 +1071,8 @@ background: none;
 /* Inputs */
 	/* Text Inputs */
 	input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
-    background-color: hsla(0, 0%, 0%, 0.83)!important;
-    border-top: 1px solid hsl(0, 0%, 29%);
+    background-color: hsla(0, 0%, 0%, 0.90)!important;
+    border-top: 0px solid hsl(0, 0%, 29%);
     color: hsl(0, 3%, 83%);
     -webkit-font-smoothing: antialiased
 	}
