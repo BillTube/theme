@@ -2026,3 +2026,14 @@ min-width: 50px;
 .showchat {
    display: inline!important;
 }
+#newmessages-indicator-bghack {
+    background: rgba(0, 0, 0, 0.86);
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-top: 1px solid #4d5b90;
+    color: #9fa4a7;
+    font-size: 11px;
+}
