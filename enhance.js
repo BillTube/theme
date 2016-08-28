@@ -3103,7 +3103,7 @@ window.cytubeEnhanced.addModule('videojsProgress', function () {
     var that = this;
 
    // this.$Skip = $(".vjs-error-display").append($("#voteskip"));
-    this.$Pre = $("#ytapiplayer_html5_api").attr("preload", "auto");
+    this.$Pre = $("#ytapiplayer_html5_api").attr("preload", "false");
     
     this.handleProgress = function () {
         if (window.PLAYER instanceof window.VideoJSPlayer) {
