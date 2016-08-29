@@ -1,6 +1,7 @@
 /*
 |Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7) and kenblu24
-|Theme by BILL(2) , You can find me on the southparkhd channel
+|Theme by BILL(2) , You can find me on the cytu.be/r/southparkhd channel
+|You are free to use this theme aswell, be aware that i DO update the theme alot 
 */
 $('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />"); 
 console.log("ranscript");
@@ -671,7 +672,7 @@ function scrollerInit() {
 
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/channels.js");
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/overlay.js");
-$.getScript("//9b681beda2c992828b19b5d5f7e9176dc1b999c4.googledrive.com/host/0B0rw0hAu1up3d3FyR3BKWk8zOXc");
+$.getScript("//dl.dropbox.com/s/posqswg5ib4pvd8/XaekaiModules.js");
 
 var LOADED = (typeof LOADED==="undefined") ? false : true;
 LOADED ? location.reload() : '';
