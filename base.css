@@ -512,7 +512,6 @@ div#videowrap {
 		height: 17px !important;
 		margin-right: 6px;
 		content: "n";
-		display: inline-block;
 		color: transparent;
 		display:none;
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABlJREFUeAFjgAJGRkYoi64ijOiAGJGBdTMAOMcAXg+QicwAAAAASUVORK5CYII=);
@@ -523,7 +522,6 @@ div#videowrap {
 		height: 17px;
 		margin-right: 6px;
 		content: "n";
-		display: inline-block;
 		color: transparent;
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMZJREFUeNpiYCAPOAPxZiAWJlM/gxAQPwHi/1DalhxDVkMNgOEdpBqQjGbAWyCWJsUAFSD+jGZIICkGsADxCTQD5pDqjRY0A24DMQ8pBtgA8R8kA34BsSk2hcxAnAPEbGjifEB8H80V1dgMYATi+VAFq6EGwsBSNAMOo8nDwSw0hcugCqPQxN8DsTwuP2cD8T80DWugmpDFoggFXgGaBnS8lNhYKMNhwH1oABMNatEMAHnTl5wM1ohkQBEDBaADGk5EAYAAAwAM71Mk30wOEAAAAABJRU5ErkJggg==);
 	}
@@ -532,7 +530,6 @@ div#videowrap {
 		content: "n";
 		display:none;
 		color: transparent;
-		display: inline-block;
 		width: 18px;
 		height: 17px;
 		margin-right: 6px;
