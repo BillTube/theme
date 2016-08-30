@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Quicksand:400,700);
+
 
 * {
   box-sizing: border-box;
@@ -412,6 +414,7 @@ div#videowrap {
 		overflow-x: hidden;
 		text-align: left;
 		height: auto;
+		font-family: quicksand;
 	}
 		.section {
 		padding: 12px 15px 5px 15px;
@@ -433,7 +436,10 @@ div#videowrap {
 		border-radius: 0;
 		background: none;
 	}
-
+#usercount {
+    font-family: Quicksand;
+    font-size: 15px;
+}
 	/*Header right (Time and progbar)*/
 	#headright {
 		width: 100%;
@@ -447,13 +453,15 @@ div#videowrap {
 		height: 2px;
 	}
 	#ss7time {
+		color: hsla(0, 0%, 100%, 0.46);
 		height: 24px;
-		position: relative;
-		float: right;
-		margin-top: -26px;
-		vertical-align: bottom;
-		font-size: 19px;
-		line-height: 24px;
+    position: relative;
+    float: right;
+    margin-top: 24px;
+    vertical-align: bottom;
+    font-size: 18px;
+    line-height: 0px;
+    font-family: quicksand;
 	}
 	/*headerbuttons*/
 	#headbottom {
@@ -506,9 +514,11 @@ div#videowrap {
 		content: "n";
 		display: inline-block;
 		color: transparent;
+		display:none;
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABlJREFUeAFjgAJGRkYoi64ijOiAGJGBdTMAOMcAXg+QicwAAAAASUVORK5CYII=);
 	}
 	#newpollbtn:before {
+		display:none;
 		width: 17px;
 		height: 17px;
 		margin-right: 6px;
@@ -520,6 +530,7 @@ div#videowrap {
 	#morebtn:after {content: "More";}
 	#morebtn:before {
 		content: "n";
+		display:none;
 		color: transparent;
 		display: inline-block;
 		width: 18px;
@@ -831,7 +842,12 @@ img.kek:hover {
   overflow-y: hidden;
 }
 #addedbyTEXT {
-    display: none;
+    display: block;
+    float: right;
+    padding-right: 0px;
+    padding-top: 5px;
+    font-family: Quicksand;
+    opacity: 0.5;
 }
 @media only screen and (max-width: 480px) {
   .horiz-scroll .scroller .left-scroll p,
@@ -1060,6 +1076,9 @@ background: none;
 .navbar-nav>li>a {
     border-right: 0px solid rgba(0,0,0,.2);
     border-left: 0px solid rgba(255,255,255,.1);
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    font-family: Quicksand;
 }
 .server-msg-reconnect {
     border: 0px solid #3C3C3C;
@@ -1140,8 +1159,9 @@ background: none;
 p#currenttitle {
     width: auto;
     float: left;
-    padding: 14px;
-    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-family: quicksand;
+    font-size: 1.4rem;
 }
 form#logoutform {
     font-size: 1rem;
@@ -1249,10 +1269,7 @@ body {
 .fadeout{
   opacity: 1 !important;
 }
-p#currenttitle {
-  font-size: 1.1rem;
-    padding: 16px;
-}
+
 #pllength {
     opacity:0;
     transition: opacity 0.7s, visibility 0.7s;
@@ -1353,9 +1370,6 @@ p#currenttitle {
 	}
 	#progbar {
 		background: hsla(167, 100%, 50%, 0.68);
-	}
-	#ss7time {
-		color: hsl(0, 0%, 56%);
 	}
 	/* headerbuttons */
 	#headbottom {
