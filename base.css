@@ -1350,6 +1350,7 @@ body {
 	max-width: 500px;
     overflow: hidden;
     overflow-wrap: break-word;	
+    max-height: 35px;
 	}
 	.section, .well, #controlsrow {
     padding: 2rem;
