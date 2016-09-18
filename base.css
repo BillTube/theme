@@ -247,7 +247,7 @@ div#videowrap {
 	#chatwrap .nano #messagebuffer {
 		height: 100% !important;
 		margin-right: 0px;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
                 padding-top: 10px;
 		/*width: 100% DO NOT UNCOMMENT FOR COMPATIBILITY WITH NANOSCROLLER*/
 	}
