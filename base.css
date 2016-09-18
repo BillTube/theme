@@ -897,7 +897,7 @@ img.kek:hover {
 }
 
 .horiz-scroll .scroller .scroll-images img {
-  width: 15%;
+  width: 20%;
   top: 0;
   z-index: 0;
   -webkit-transition: all 100ms;
