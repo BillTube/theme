@@ -1996,8 +1996,11 @@ min-width: 50px;
 .well {
     border: 0px solid #0c0d0e;
 }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    background: rgba(0, 0, 0, 0.77);
+}
 .bg-wrapper, #backg {
-    opacity:0.8;
+    opacity:0.95;
     overflow: hidden;
     background-size: cover!important;
     background-position: center center!important;
