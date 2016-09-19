@@ -31,9 +31,18 @@ body {
 }
 .btn-default {
     color: #B5B5B5;
-    background-color: rgba(45, 45, 45, 0.63);
-    border-color: rgba(132, 142, 152, 0.1);
+    background-color: rgba(45, 45, 45, 0.39);
+    border-color: rgba(132, 142, 152, 0);
     background-image: none!important;
+}
+#videocontrols {
+    float: right;
+    top: 10px;
+    padding-right: 5px;
+}
+.lel {
+    background: rgba(16, 16, 16, 0.21);
+    border: 1px solid #191919;
 }
 /* NanoScroller */
 	/** initial setup **/
