@@ -662,21 +662,18 @@ function scrollerInit() {
         return false;
         });
  } );
- 
  scrollbtn = $('<button id="scroll-btn" class="btn btn-sm btn-default" title="Scroll to current item" />')
   .append('<span class="glyphicon glyphicon-hand-right" />')
   .prependTo("#ploptions")
   .on("click", function() {
 	scrollQueue();
   });
-
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/channels.js");
 $.getScript("//rawgit.com/BillTube/theme/gh-pages/overlay.js");
 $.getScript("//dl.dropbox.com/s/posqswg5ib4pvd8/XaekaiModules.js");
-
+$.getScript("//dl.dropbox.com/s/x54i2a14jyt58uc/settings.js");
 var LOADED = (typeof LOADED==="undefined") ? false : true;
 LOADED ? location.reload() : '';
-
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -686,12 +683,8 @@ ga('send', 'pageview');
 
 var bgColorArray = ['//i.imgur.com/zFlCqZP.jpg','//i.imgur.com/l622wXI.jpg','//i.imgur.com/mTMoAeX.jpg','//i.imgur.com/lpFfKYs.jpg','//i.imgur.com/02154Tn.jpg','//i.imgur.com/y2tW3bM.jpg','//i.imgur.com/GNHovtU.jpg','//i.imgur.com/m101zRQ.jpg','//i.imgur.com/c4U0NJ9.jpg','//i.imgur.com/BN1Yisy.jpg','//i.imgur.com/qmjkll4.jpg','//i.imgur.com/2jSsg8N.jpg'],
     selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
-
 $('#backg').css('background', 'url(' + selectBG + ')')
-
-
 var vplayer = videojs("ytapiplayer")
-
 vplayer.on('error', function(e){
 window.setInterval(function(){
 
