@@ -2112,3 +2112,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
   box-shadow: 0px 0px 1px #3c6d59;
 }
+.navbar-nav>li:first-child { 
+    display:none
+}
