@@ -1900,7 +1900,7 @@ background-color: rgba(133, 115, 159, 0.25);
     display: block;
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: 82%;
     padding: 10px;
     z-index:1000000;
 }
@@ -2113,4 +2113,18 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 #userlist {
  overflow: scroll;
+}
+.spooky {
+    display: block;
+    height: 100%;
+    position: absolute;
+    float: left;
+    left:20px;
+}
+.vision {
+    display: block;
+    height: 100%;
+    position: absolute;
+    float: right;
+    right: 35px;
 }
