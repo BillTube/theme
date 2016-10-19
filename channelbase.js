@@ -1,10 +1,14 @@
 /*
 |Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7) and kenblu24
-|Theme by BILL(2) , You can find me on the cytu.be/r/southparkhd channel
-|You are free to use this theme aswell, be aware that i DO update the theme alot 
+|Theme by BILL(2) , You can find me on the cytu.be/r/southparkhd channel or any other of my channels
+|You are free to use (and edit) this theme, be aware that i DO update the theme alot 
 */
+
+//force https for videos from googs
+if (window.location.protocol != "https:")
+    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 $('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />"); 
-console.log("ranscript");
+console.log("sup yall");
 
 	/*! nanoScrollerJS - v0.8.7 - (c) 2015 James Florentino; Licensed MIT */
 
