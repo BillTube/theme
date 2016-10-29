@@ -74,3 +74,5 @@ fsVidButton.addEventListener('click', function(e) {
 	e.preventDefault();
 	requestFullscreen(videowrap);
 });
+$("#VideoOverlay").append("<img src='//i.imgur.com/qSSHf0U.gif' id='spooky' class='spooky'>");
+$("#VideoOverlay").append("<img src='//i.imgur.com/wL1mRzA.png' id='vision' class='vision'>");
