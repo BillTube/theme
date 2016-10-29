@@ -2115,14 +2115,14 @@ input[type="range"]::-webkit-slider-thumb:active {
  overflow: scroll;
 }
 .spooky {
-    display: block;
+    display: none;
     height: 100%;
     position: absolute;
     float: left;
     left:20px;
 }
 .vision {
-    display: block;
+    display: none;
     height: 100%;
     position: absolute;
     float: right;
