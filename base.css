@@ -2128,3 +2128,17 @@ input[type="range"]::-webkit-slider-thumb:active {
     float: right;
     right: 35px;
 }
+.halloweens {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    background: #c75b1a;
+    color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+}
