@@ -12,6 +12,7 @@ console.log("sup yall");
 
 //happy halloween
 $(".navbar-brand").before("<img style='-webkit-user-select: none' height='40px' src='//i.imgur.com/eeeDoBG.gif'>");
+$(".server-msg-reconnect").before("<a href='https://cytu.be/r/spooktober' class='halloweens'>Happy Halloween</a>");
 
 	/*! nanoScrollerJS - v0.8.7 - (c) 2015 James Florentino; Licensed MIT */
 
