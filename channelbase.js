@@ -689,7 +689,7 @@ ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
 //var bgColorArray = ['//i.imgur.com/zFlCqZP.jpg','//i.imgur.com/l622wXI.jpg','//i.imgur.com/mTMoAeX.jpg','//i.imgur.com/lpFfKYs.jpg','//i.imgur.com/02154Tn.jpg','//i.imgur.com/y2tW3bM.jpg','//i.imgur.com/GNHovtU.jpg','//i.imgur.com/m101zRQ.jpg','//i.imgur.com/c4U0NJ9.jpg','//i.imgur.com/BN1Yisy.jpg','//i.imgur.com/qmjkll4.jpg','//i.imgur.com/2jSsg8N.jpg'],
-var bgColorArray = ['//i.imgur.com/dgUiWa8.jpg','//i.imgur.com/Kvms3J0.jpg'],
+var bgColorArray = ['//i.imgur.com/aRmYjLV.jpg'],
     selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
 var vplayer = videojs("ytapiplayer")
