@@ -2142,3 +2142,4 @@ input[type="range"]::-webkit-slider-thumb:active {
     width: 100%;
     text-align: center;
 }
+#resize-video-larger, #resize-video-smaller { Display:none;}
