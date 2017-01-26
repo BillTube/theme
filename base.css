@@ -447,7 +447,12 @@ div#videowrap {
 		border: none;
 		border-radius: 0;
 		background: none;
+		position: absolute;
+                top: 16px;
 	}
+#chatheader, #videowrap-header {
+	border: 0px solid #ccc!important;
+}
 #usercount {
     font-family: Quicksand;
     font-size: 15px;
