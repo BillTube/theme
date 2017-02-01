@@ -1255,7 +1255,7 @@ body {
 .queue_entry {
     line-height: 35px;
     padding: 5px;
-    font-size: 11pt;
+    font-size: calc(100% + ((0.4vw - .41rem) * 1.189));
 }
 .timestamp {
      font-size: 7pt;
