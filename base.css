@@ -1267,7 +1267,7 @@ body {
     width: 52px;
     position: absolute;
     color: #d0d0d0;
-    background: rgba(107, 107, 107, 0.58);
+    background: rgba(0, 0, 0, 0.05);
     padding: 1px 4px;
     text-decoration: none;
     border-radius: 5px;
