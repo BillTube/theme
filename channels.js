@@ -11,7 +11,7 @@ $("#main").after(
 '<a href="https://cytu.be/r/animatedshows"><img src="//i.imgur.com/WeaQe7R.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/southparkhd"><img src="//i.imgur.com/C47MQA3.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/simpsons"><img src="//i.imgur.com/DC5EYIe.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/SEINFELDHD"><img src="//i.imgur.com/8w6YkU1.png" class="kek" /></a>' +
+'<a href="https://cytu.be/r/spooktober"><img src="//i.imgur.com/aF4AS8j.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/CopsTube"><img src="//i.imgur.com/vDJV3Of.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/BillTube"><img src="//i.imgur.com/KzcwjLR.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/spookyshows"><img src="//i.imgur.com/2LB9834.png" class="kek" /></a>' +
