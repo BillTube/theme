@@ -1941,6 +1941,14 @@ background-color: rgba(133, 115, 159, 0.25);
     padding: 3px;
     transition: bottom 0.5s cubic-bezier(0.42, 0.0, 0.58, 1.0);
 }
+#prompt-install-drive-userscript {
+    padding: 100px;
+    margin-top: 10%;
+    margin-left: 100px;
+    width: 100%;
+    font-size: 12px;
+    background: rgba(39, 38, 38, 0.18);
+}
 .server-whisper {
     text-align: center;
     display: inline-block;
