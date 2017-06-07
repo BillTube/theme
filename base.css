@@ -1049,7 +1049,7 @@ img.kek:hover {
 }
 /*Scrollbars*/
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 0px;
 	height: 10px;
 	border: 1px solid hsl(0,0%,27%);
 	border-top: 0;border-bottom: 0;
