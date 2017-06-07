@@ -63,7 +63,7 @@ body {
 	  right         : 0;
 	  bottom        : 0;
 	  left          : 0;
-	  margin-right: -5px!important;
+	  margin-right: 0px!important;
 	}
 	.nano > .nano-content:focus {
 	  outline: thin dotted;
@@ -283,7 +283,7 @@ div#videowrap {
 	}
 	#mainpage .container-fluid {
 		width: 100%;
-		padding: 0 9px 0 0;
+		padding: 0 0 0 0;
 	}
 	.col-md-7 {
 		width: 100%;;
@@ -1446,7 +1446,7 @@ body {
 }
 	/* Footer */
 	#footer {
-    background: hsl(0, 0%, 0%) !important;
+    background: hsla(0, 0%, 0%, 0.9) !important;
     font-size: 11px;
 }
 .vjs-error-display div {
