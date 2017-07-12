@@ -1,7 +1,7 @@
 /*
 |Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7) and kenblu24
-|Theme by BILL(2) , You can find me on the cytu.be/r/southparkhd channel or any other of my channels
-|You are free to use (and edit) this theme, be aware that i DO update the theme alot 
+|Theme by BILL(2) , You can find me on my discord channel discord.gg/fwadWd9
+|You are free to use (and edit) this theme but leave the credits in place for everyone involved.
 */
 
 //force https for videos from googs
