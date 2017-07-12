@@ -1221,7 +1221,7 @@ form#logoutform {
 
 }
 .navbar-brand {
-    margin-left: 35px;
+    margin-left: 35px!important;
     float: left;
     padding: 15px;
     font-size: 19px;
