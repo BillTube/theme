@@ -487,17 +487,24 @@ div#videowrap {
 		padding: 5px 0 0 0;
 	}
 	#headbottom .headbtn {
-    color: hsla(0, 0%, 100%, 0.65);
+    color: hsla(252, 22%, 83%, 0.98);
     height: 27px;
     background: none;
     border: none;
     border-radius: 0;
     padding: 5px 0 5px 0;
     box-shadow: none;
-    font-size: 17px;
+    font-size: 15px;
     vertical-align: initial;
     FONT-family: quicksand;
 	}
+.headbtn:hover {
+color: white;
+border: 0px;
+border-bottom: 2px rgba(187, 187, 187, 0.21) solid;
+-webkit-animation: fadeIn .5s ease-in 1 forwards;
+animation: fadeIn .5s ease-in 1 forwards;
+}
 	.headbtnleft {
 		margin-right: 20px;
 	}
@@ -1366,7 +1373,7 @@ body {
     max-height: 35px;
 	}
 	.section, .well, #controlsrow {
-    padding: 2rem;
+    padding: 4rem;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 3rem;
