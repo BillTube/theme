@@ -2393,3 +2393,6 @@ input[type="range"]::-webkit-slider-thumb:active {
     stroke-dashoffset: 0;
   }
 }
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 50px!important;
+}
