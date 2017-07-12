@@ -1221,9 +1221,10 @@ form#logoutform {
 
 }
 .navbar-brand {
+    margin-left: 35px;
     float: left;
     padding: 15px;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 body {
@@ -2330,5 +2331,65 @@ input[type="range"]::-webkit-slider-thumb:active {
   100% {
     transform: translate(50px, -50%) rotate(45deg);
     opacity: 0;
+  }
+}
+.indicator {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%) scale(2);
+}
+.indicator svg polyline {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.indicator svg polyline#back {
+  stroke: rgba(59,211,171,0.3);
+}
+.indicator svg polyline#front {
+  stroke: #3bd3ab;
+  stroke-dasharray: 12, 36;
+  stroke-dashoffset: 48;
+  animation: dash 1s linear infinite;
+}
+.cta {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  color: #222;
+  font-weight: bold;
+}
+@-moz-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }
