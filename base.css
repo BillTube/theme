@@ -2396,3 +2396,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 50px!important;
 }
+.vjs-menu-button.vjs-menu-button-popup.vjs-control.vjs-button.vjs-resolution-button {
+    right: 11px;
+    bottom: 5px;
+}
