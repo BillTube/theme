@@ -2067,6 +2067,11 @@ min-width: 50px;
 .showchat {
    display: inline!important;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: rgba(93, 99, 104, 0.2)!important;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.12),rgba(16, 17, 18, 0.12) 40%,rgba(25, 27, 29, 0.42))!important;
+}
+
 	/* Tired of yo shit right now */
 #newmessages-indicator-bghack {
     background: rgba(0, 0, 0, 0.86);
