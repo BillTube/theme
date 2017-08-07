@@ -13,9 +13,8 @@ $('#videowrap').hover(function(){
 
 $("#VideoOverlay").append($("#voteskip"));
 $("#VideoOverlay").append($("#mediarefresh"));
-$("#VideoOverlay").append("<button id='hidechat' title='Hide Chat' class='btn btn-sm btn-default OLB'>Hide Chat</button>");
-$("#VideoOverlay").append("<button id='showchat' title='show Chat' class='btn btn-sm btn-default OLB'>Show Chat</button>");
-
+$("#VideoOverlay").append("<button id='hidechat' title='Hide Chat' class='btn btn-sm btn-default OLB'>Theater Mode</button>");
+$("#VideoOverlay").append("<button id='showchat' title='show Chat' class='btn btn-sm btn-default OLB'>Regular Mode</button>");
 $(document).ready(function(){
 	$('#hidechat').on('click', function(){nochat();});
 	$('#showchat').on('click', function(){maxchat();});
@@ -24,18 +23,29 @@ $(document).ready(function(){
 function nochat(){
 	$('#chatwrap').addClass('hidden');
 	$('#maincontain').addClass('fullvideo');
-	$('#hidechat').addClass('hidden');
+	$('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper').addClass('hidden');
 	$('#showchat').addClass('showchat');
+	    $('#mainpage').css({
+        'padding-top':'0px',
+    });
+	    $('#videowrap').css({
+        'position':'fixed',
+        'height':'100%',
+    });
 }
-
 function maxchat(){
 	$('#chatwrap').removeClass('hidden');
 	$('#maincontain').removeClass('fullvideo');
-        $('#hidechat').removeClass('hidden');
+        $('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper').removeClass('hidden');
 	$('#showchat').removeClass('showchat');
+	    $('#mainpage').css({
+        'padding-top':'50px',
+    });
+	    $('#videowrap').css({
+        'position':'inherit',
+        'height':'inherit',
+    });
 }
-
-
 var requestFullscreen = function (ele) {
 	if (ele.requestFullscreen) {
 		ele.requestFullscreen();
@@ -49,7 +59,6 @@ var requestFullscreen = function (ele) {
 		console.log('Fullscreen API is not supported.');
 	}
 };
-
 var exitFullscreen = function () {
 	if (document.exitFullscreen) {
 		document.exitFullscreen();
@@ -63,10 +72,6 @@ var exitFullscreen = function () {
 		console.log('Fullscreen API is not supported.');
 	}
 };
-
-
-
-
 var fsVidButton = document.getElementById('fs-vid-button');
 var video = document.getElementById('videowrap');
 
@@ -74,5 +79,3 @@ fsVidButton.addEventListener('click', function(e) {
 	e.preventDefault();
 	requestFullscreen(videowrap);
 });
-$("#VideoOverlay").append("<img src='//i.imgur.com/qSSHf0U.gif' id='spooky' class='spooky'>");
-$("#VideoOverlay").append("<img src='//i.imgur.com/wL1mRzA.png' id='vision' class='vision'>");
