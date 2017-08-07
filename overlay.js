@@ -30,7 +30,7 @@ function nochat(){
     });
 	    $('#videowrap').css({
         'position':'fixed',
-        'height':'100%',
+        'height':'100%!important',
     });
 }
 function maxchat(){
