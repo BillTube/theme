@@ -210,6 +210,8 @@ div#videowrap {
 	margin-bottom: 9px !important;
 	float: none !important;
 	background: black;
+height:100%;
+width:100%;
 }
 .video-js.vjs-playing .vjs-tech {
   pointer-events: none;
