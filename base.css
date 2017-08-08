@@ -2406,3 +2406,60 @@ input[type="range"]::-webkit-slider-thumb:active {
     right: 11px;
     bottom: 5px;
 }
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  2% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  8% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  28% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  36% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  100% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+}
+.poll-notify {
+    color: #f00;
+    font-weight: 100;
+    animation: flickering 5s infinite;
+}
+.close {
+    float: right;
+    margin-left: 10px;
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 2px 0 #3a3a3a;
+    opacity: .2;
+    filter: alpha(opacity=20);
+}
