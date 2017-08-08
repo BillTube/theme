@@ -1,5 +1,5 @@
 $("#videowrap").append("<div id='VideoOverlay' class='fadein'><button class='btn btn-sm btn-default OLB' id='fs-vid-button'>Fullscreen</button></div>");
-$('#videowrap').hover(function(){
+/*$('#videowrap').hover(function(){
     $('#VideoOverlay').css({
         'opacity':'1',
         'display':'block',
@@ -9,6 +9,17 @@ $('#videowrap').hover(function(){
         'opacity':'0',
         'display':'none',
     });
+});
+*/
+$("#VideoOverlay").hide();
+var i = null;
+$("#ytapiplayer").mousemove(function() {
+    clearTimeout(i);
+    $("#VideoOverlay").show();
+    i = setTimeout('$("#VideoOverlay").hide();', 5000);
+}).mouseleave(function() {
+    clearTimeout(i);
+    $("#VideoOverlay").hide();  
 });
 
 $("#VideoOverlay").append($("#voteskip"));
