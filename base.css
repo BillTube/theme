@@ -991,6 +991,7 @@ img.kek:hover {
 }
 .OLB {
     background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 	border: 0;
     font-size: 14px;
     color: rgba(210, 210, 210, 0.84);
