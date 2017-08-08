@@ -990,8 +990,8 @@ img.kek:hover {
     display: block;
 }
 .OLB {
-    background: rgba(0, 0, 0, 0.2);
-    border: 0;
+    background: rgba(0, 0, 0, 0.5);
+	border: 0;
     font-size: 14px;
     color: rgba(210, 210, 210, 0.84);
     margin-right: 5px;
@@ -1014,7 +1014,7 @@ img.kek:hover {
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 4px;
 }
 .OLB:hover {
