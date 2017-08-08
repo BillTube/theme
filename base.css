@@ -1909,8 +1909,6 @@ background-color: rgba(133, 115, 159, 0.25);
 #VideoOverlay {
   -moz-transition: opacity 1000ms ease;
   transition: opacity 1000ms ease;
-    opacity:0;
-    display:none;
     top: 0;
     display: block;
     position: absolute;
