@@ -13,7 +13,7 @@ $("#videowrap").append("<div id='VideoOverlay' class='fadein'><button class='btn
 */
 $("#VideoOverlay").hide();
 var i = null;
-$("#ytapiplayer").mousemove(function() {
+$("#videowrap").mousemove(function() {
     clearTimeout(i);
     $("#VideoOverlay").show();
     i = setTimeout('$("#VideoOverlay").hide();', 5000);
