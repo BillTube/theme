@@ -32,7 +32,9 @@ function nochat(){
         'position':'fixed',
         'height':'100%!important',
     });
-
+	    $('.embed-responsive').css({
+        'position':'static',
+    });
 }
 
 function maxchat(){
@@ -47,7 +49,9 @@ function maxchat(){
         'position':'inherit',
         'height':'inherit',
     });
-
+	    $('.embed-responsive').css({
+        'position':'relative',
+    });
 }
 var requestFullscreen = function (ele) {
 	if (ele.requestFullscreen) {
