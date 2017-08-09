@@ -1302,7 +1302,7 @@ body {
 /* Chat */
 	div#messagebuffer, div#userlist {
     border: 0px solid hsl(0, 0%, 18%);
-    background: hsla(0, 0%, 0%, 0.54);
+    background: hsla(0, 0%, 0%, 0.80);
 	}
 	.nick-hover {
 		background: hsla(0, 0%, 6%, 0.03);
@@ -1661,7 +1661,7 @@ strong.username {
 	}
 	.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
     color: #fff;
-    background-color: rgba(21, 24, 27, 0.78);
+    background-color: rgba(19, 18, 18, 0.81);
     border-color: rgba(30, 32, 35, 0);
     border-bottom: 0px solid black;
 }
