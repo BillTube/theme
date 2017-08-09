@@ -1119,6 +1119,7 @@ img.kek:hover {
     border-top: 0px solid hsl(0, 0%, 29%);
     color: hsl(0, 3%, 83%);
     -webkit-font-smoothing: antialiased
+     border-bottom: 1px solid rgba(177, 157, 157, 0.25);
 	}
 	input.form-control[type="text"]:focus, input.form-control[type="password"]:focus, input.form-control[type="email"]:focus, textarea.form-control:focus {
 		border: 1px solid hsl(0, 0%, 8%);
