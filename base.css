@@ -1270,16 +1270,16 @@ body {
     font-size: calc(100% + ((0.4vw - .41rem) * 1.189));
 }
 .timestamp {
-     font-size: 7pt;
+    font-size: 6pt;
     float: left;
     display: block;
-    opacity: 0;
+    opacity: 1;
     left: 0;
     margin-top: 0px;
     width: 52px;
     position: absolute;
-    color: #d0d0d0;
-    background: rgba(0, 0, 0, 0.05);
+    color: rgba(197, 196, 175, 0.5);
+    background: rgba(0, 0, 0, 0.84);
     padding: 1px 4px;
     text-decoration: none;
     border-radius: 5px;
