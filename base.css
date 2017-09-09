@@ -1270,7 +1270,7 @@ body {
     font-size: calc(100% + ((0.4vw - .41rem) * 1.189));
 }
 .timestamp {
-    font-size: 6pt;
+     font-size: 6pt;
     float: left;
     display: block;
     opacity: 0;
