@@ -2471,3 +2471,4 @@ input[type="range"]::-webkit-slider-thumb:active {
     opacity: 1;
     filter: alpha(opacity=50);
 }
+.timestamp:hover {opacity:1;}
