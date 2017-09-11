@@ -34,7 +34,7 @@ $(document).ready(function(){
 function nochat(){
 	$('#chatwrap').addClass('hidden');
 	$('#maincontain').addClass('fullvideo');
-	$('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper').addClass('hidden');
+	$('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper,#rightpane').addClass('hidden');
 	$('#showchat').addClass('showchat');
 	    $('#mainpage').css({
         'padding-top':'0px',
@@ -51,7 +51,7 @@ function nochat(){
 function maxchat(){
 	$('#chatwrap').removeClass('hidden');
 	$('#maincontain').removeClass('fullvideo');
-        $('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper').removeClass('hidden');
+        $('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper,#rightpane').removeClass('hidden');
 	$('#showchat').removeClass('showchat');
 	    $('#mainpage').css({
         'padding-top':'50px',
