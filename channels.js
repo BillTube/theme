@@ -10,14 +10,15 @@ $("#main").after(
 '<div class="scroll-images scrollable-x">' +
  '<a href="https://cytu.be/r/southparkhd"><img src="//i.imgur.com/C47MQA3.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/animatedshows"><img src="//i.imgur.com/WeaQe7R.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/simpsons"><img src="//i.imgur.com/DC5EYIe.png" class="kek" /></a>' +
  '<a href="https://cytu.be/r/seinfeldHD"><img src="//i.imgur.com/w3WPXIa.png" class="kek" /></a>' +
  '<a href="https://cytu.be/r/spooktober"><img src="//i.imgur.com/ShPwLnE.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/spookyshows"><img src="//i.imgur.com/2LB9834.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/buffy"><img src="//i.imgur.com/GxCKtEZ.png" class="kek" /></a>' +
  '<a href="https://cytu.be/r/billcartoon"><img src="//i.imgur.com/BdrUNQZ.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/simpsons"><img src="//i.imgur.com/DC5EYIe.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/CopsTube"><img src="//i.imgur.com/vDJV3Of.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/BillTube"><img src="//i.imgur.com/KzcwjLR.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/spookyshows"><img src="//i.imgur.com/2LB9834.png" class="kek" /></a>' +
- '<a href="https://cytu.be/r/buffy"><img src="//i.imgur.com/GxCKtEZ.png" class="kek" /></a>' +
+
 '</div></div></div>');
 // The HorizontalScroller Class accepts a jQuery object as its only argument
 // The argument is the parent container of the scrolling element
