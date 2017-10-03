@@ -1302,7 +1302,7 @@ body {
 /* Chat */
 	div#messagebuffer, div#userlist {
     border: 0px solid hsl(0, 0%, 18%);
-    background: hsla(0, 0%, 0%, 0.80);
+    background: hsla(0, 0%, 0%, 0.60);
 	}
 	.nick-hover {
 		background: hsla(0, 0%, 6%, 0.03);
