@@ -48,6 +48,7 @@ $("#videoinfo").append("<div class='textheader'></div><div id='videoinfohead'><s
 $(".navbar-header").after($("#currenttitle")); //move video title below video player
 $("#headbottom").append("<button id='addmedia' title='Add Media' class='headbtn headbtnleft'></button>");
 $("#headbottom").append($("#newpollbtn"));
+$("#headbottom").append("<button id='morebtn' title='More Actions' data-toggle='dropdown' class='headbtn headbtnleft'></button>");
 $("#newpollbtn").addClass("headbtn headbtnleft");
 $("#emotelistbtn").text("");
 $("#emotelistbtn").removeClass("btn btn-sm");
