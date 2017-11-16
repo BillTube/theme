@@ -208,7 +208,6 @@ input[type="checkbox"]:checked:after {
 }
 div#videowrap {
 	margin-bottom: 9px !important;
-	float: none !important;
 	background: black;
 height:100%;
 width:100%;
@@ -968,6 +967,7 @@ img.kek:hover {
 #scroll-feature {
     padding-top: 10px;
     display:block;
+    float: left;
 }
 
 #scroll-feature:hover {
