@@ -8,15 +8,15 @@ $("#main").after(
 '<p class="fa fa-angle-right"></p>' +
 '</div>' +
 '<div class="scroll-images scrollable-x">' +
- '<a href="https://cytu.be/r/southparkhd"><img src="//i.imgur.com/C47MQA3.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/animatedshows"><img src="//i.imgur.com/WeaQe7R.png" class="kek" /></a>' +
- '<a href="https://cytu.be/r/seinfeldHD"><img src="//i.imgur.com/w3WPXIa.png" class="kek" /></a>' +
- '<a href="https://cytu.be/r/billcartoon"><img src="//i.imgur.com/BdrUNQZ.png" class="kek" /></a>' +
- '<a href="https://cytu.be/r/spookyshows"><img src="//i.imgur.com/2LB9834.png" class="kek" /></a>' +
- '<a href="https://cytu.be/r/buffy"><img src="//i.imgur.com/GxCKtEZ.png" class="kek" /></a>' +
- '<a href="https://cytu.be/r/spooktober"><img src="//i.imgur.com/8h07klM.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/CopsTube"><img src="//i.imgur.com/vDJV3Of.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/BillTube"><img src="//i.imgur.com/KzcwjLR.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/southparkhd"><img src="//s14.postimg.org/m3rs2y1rl/C47_MQA3.png" class="kek" /></a>' +
+'<a href="https://cytu.be/r/animatedshows"><img src="//s14.postimg.org/arf6l60sh/Wea_Qe7_R.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/seinfeldHD"><img src="//s14.postimg.org/yv5y9gqz5/w3_WPXIa.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/billcartoon"><img src="//s14.postimg.org/c6gr9whb5/Bdr_UNQZ.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/spookyshows"><img src="//s14.postimg.org/twifuuuv5/2_LB9834.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/buffy"><img src="//s14.postimg.org/6iagj0koh/Gx_CKt_EZ.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/spooktober"><img src="//s14.postimg.org/6iagj0se9/8h07kl_M.png" class="kek" /></a>' +
+'<a href="https://cytu.be/r/CopsTube"><img src="//s14.postimg.org/rf6onst0x/v_DJV3_Of.png" class="kek" /></a>' +
+'<a href="https://cytu.be/r/BillTube"><img src="//s14.postimg.org/6iagj52pt/Kzcwj_LR.png" class="kek" /></a>' +
 
 '</div></div></div>');
 // The HorizontalScroller Class accepts a jQuery object as its only argument
