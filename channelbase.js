@@ -684,7 +684,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['//s14.postimg.org/7ylz0tv7h/3f_WS4y_T.gif','//s14.postimg.org/omdh3cd4d/fat_Vm_Pu.gif','//s14.postimg.org/ilfs69isd/g_D9_ZR4_J.gif','//s14.postimg.org/cki396ogd/k2t_Pprm.gif','//s14.postimg.org/omdh3bi99/s_UWLb3z.gif'],
+var bgColorArray = ['//image.ibb.co/jSxGRn/1452885205828.jpg','https://image.ibb.co/kJ2Y6n/1505637434395.jpg'],
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
