@@ -2473,3 +2473,6 @@ input[type="range"]::-webkit-slider-thumb:active {
     filter: alpha(opacity=50);
 }
 .timestamp:hover {opacity:1;}
+.fa.pull-right {
+    margin-left: 0em!important;
+}
