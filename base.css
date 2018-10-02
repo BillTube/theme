@@ -1609,10 +1609,10 @@ img.chat-avatar.chat-avatar_small:hover:after {
 strong.username {
     word-wrap: break-word;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.2;
     font-weight: 700;
-    color: rgba(171, 160, 149, 0.82);
+    color: rgba(134, 111, 89, 0.82);
     cursor: cell;
     padding-top: 0px;
     letter-spacing: 1.5px;
