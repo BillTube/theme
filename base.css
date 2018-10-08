@@ -2476,3 +2476,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .fa.pull-right {
     margin-left: 0em!important;
 }
+.well>input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
+    border-bottom: #ffffff40 solid 1px;
+    border-radius: 6px;
+}
