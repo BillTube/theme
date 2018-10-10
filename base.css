@@ -2490,4 +2490,10 @@ input[type="range"]::-webkit-slider-thumb:active {
 	.bg-wrapper, #backg {
     background-position: center center!important;
 		position: fixed;}
+	.section, .well, #controlsrow {
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+	}
   }
