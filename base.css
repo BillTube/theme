@@ -2483,7 +2483,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 @media (max-width: 767px) {
   #currenttitle {
     display: none;}
-  #motdwrap,.section, .well, #controlsrow { padding: 0rem;}
+  #motdwrap, .well, #controlsrow { padding: 0rem;}
 	.channel-emote {
     max-width: 60px;
 		max-height: 60px;}
