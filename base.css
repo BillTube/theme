@@ -1954,8 +1954,9 @@ background-color: rgba(133, 115, 159, 0.25);
     padding: 100px;
     margin-top: 10%;
     margin-left: 100px;
-    width: 100%;
-    font-size: 12px;
+    width: 80%;
+    position: absolute;
+    font-size: 16px;
     background: rgba(39, 38, 38, 0.18);
 }
 .server-whisper {
