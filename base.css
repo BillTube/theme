@@ -2498,3 +2498,9 @@ input[type="range"]::-webkit-slider-thumb:active {
     margin-top: 1rem;
 	}
   }
+.vjs-subtitles-button.vjs-menu-button.vjs-menu-button-popup.vjs-control.vjs-button {
+    right: 66px;
+    text-align: right;
+    position: absolute;
+    bottom: 26px;
+}
