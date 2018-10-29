@@ -2513,4 +2513,6 @@ width: 23%!important;
 float: right!important;
 right: 0!important;
 }
-.darkerbg {opacity: 0.10!important;}
+.darkerbg {opacity: 0.10!important;
+    -webkit-transition: all 100ms;
+    transition: all 100ms;}
