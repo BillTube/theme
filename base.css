@@ -2504,3 +2504,12 @@ input[type="range"]::-webkit-slider-thumb:active {
     position: absolute;
     bottom: 26px;
 }
+.leftchat {
+float:left!important;
+left:0!important;
+width: 23%!important;
+}
+.leftchatvideo {
+float: right!important;
+    right: 0!important;
+}
