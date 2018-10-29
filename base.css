@@ -471,13 +471,13 @@ width:100%;
 		height: 2px;
 	}
 	#ss7time {
-		color: hsla(0, 0%, 100%, 0.46);
+		color: hsla(216, 26%, 77%, 0.46);
 		height: 24px;
     position: relative;
     float: right;
     margin-top: 24px;
     vertical-align: bottom;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 0px;
     font-family: quicksand;
 	}
@@ -488,7 +488,7 @@ width:100%;
 		padding: 5px 0 0 0;
 	}
 	#headbottom .headbtn {
-    color: hsla(252, 22%, 83%, 0.98);
+    color: hsla(216, 26%, 77%, 0.46);
     height: 27px;
     background: none;
     border: none;
