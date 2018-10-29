@@ -33,6 +33,7 @@ $(document).ready(function(){
 
 function nochat(){
 	$('#chatwrap').addClass('hidden');
+	$('#pollwrap').addClass('hidden');
 	$('#maincontain').addClass('fullvideo');
 	$('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper,#rightpane').addClass('hidden');
 	$('#showchat').addClass('showchat');
@@ -50,6 +51,7 @@ function nochat(){
 
 function maxchat(){
 	$('#chatwrap').removeClass('hidden');
+	$('#pollwrap').removeClass('hidden');
 	$('#maincontain').removeClass('fullvideo');
         $('#hidechat,#scroll-feature,#motdrow,#videoinfo,#queuecontainer,#footer,.navbar,#bg-wrapper,#rightpane').removeClass('hidden');
 	$('#showchat').removeClass('showchat');
