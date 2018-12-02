@@ -684,7 +684,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['//image.ibb.co/jSxGRn/1452885205828.jpg','https://image.ibb.co/kJ2Y6n/1505637434395.jpg'],
+var bgColorArray = ['https://lh3.googleusercontent.com/rq2UL_qWWHARSW7rjnqKb7kzc-BKRJd0SfblacUhWDntzIWnRSMz_pWKL5pGN30DMVbHN_LtQseXPI6VMJ_Q-4CgCAZbiFFrtwIKG4v7CMmRMejLEvE2VJSnvjIQj-_7f2OTxzAsz7uzWGy6Ofr-HEPoFP_WTp-xR1pDxoUX0DH6WkTL5XFr1QM-EnEdn8pnQc4tJO0tGrg0_VdeZ_VCFv6i07ZlcbohQqE61IyXB3lWkN8GkrnvT7RQk9b0Cn8wks5Tyi2V4zeXySl2H1q3n7kfpNw5aXClIcFXnxiA2EHmSzQh91SF3vd5RUSyIqFKYd7rR4DnEFYDxrkXdDHPBaaInmrg40XfNg3T9FIjeGPtUBkf9cfkz787Fqk_WufbDDknQZbQKZTmKvmYxincq3AsS8U2gXi8Cj_mpQi5-4Q71zgNO5ISU70xBYhJ4LLT0aSfc2UGd4mZ8L9JkQkdfRkDQTbN4LOTCngeUMlu-wDdXbEmaMuS9H-T9RprOKuZE_9GAa9vbfPpRYmMMQ-tZ6qRZm66L7V3T3FwZnUza43gim8PCwN6YejywDBGG6aO-QXcs0eJX8_B_OjuF_nWTYovNQ38viT9wcoZ2gTu6eLXxrO09TwFVojlkwDJwMcdQajeN_nfB_504VUhIg9o8Ax6=w1133-h705-no','https://image.ibb.co/kJ2Y6n/1505637434395.jpg'],
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
