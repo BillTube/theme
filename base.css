@@ -1931,8 +1931,8 @@ background-color: rgba(133, 115, 159, 0.25);
 }
 .chat-msg-\$server\$ {
     font-style: italic;
-    color: rgba(187, 204, 199, 0.78);
-    font-size: 7pt;
+    color: hsla(305, 13%, 34%, 0.84);
+    font-size: 8pt;
     position: relative;
     border-radius: 1000px;
     background: rgba(255, 255, 255, 0.07);
