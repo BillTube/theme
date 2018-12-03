@@ -1914,7 +1914,7 @@ background-color: rgba(133, 115, 159, 0.25);
     display: block;
     position: absolute;
     width: 100%;
-    height: 78%;
+    height: 50px;
     padding: 10px;
     z-index:1000000;
 }
