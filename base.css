@@ -2516,3 +2516,7 @@ right: 0!important;
 .darkerbg {opacity: 0.10!important;
     -webkit-transition: all 100ms;
     transition: all 100ms;}
+.overlayfix {
+    position: inherit!important;
+    background: #2121212b;
+}
