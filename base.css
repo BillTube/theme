@@ -2522,3 +2522,4 @@ right: 0!important;
 }
 .RatioFill {object-fit: fill;}
 .RatioCover {object-fit: cover;}
+.Buffer {content: 'buffering...';}
