@@ -2520,3 +2520,5 @@ right: 0!important;
     position: inherit!important;
     background: #2121212b;
 }
+.RatioFill {object-fit: fill;}
+.RatioCover {object-fit: cover;}
