@@ -101,3 +101,41 @@ fsVidButton.addEventListener('click', function(e) {
 	e.preventDefault();
 	requestFullscreen(videowrap);
 });
+  // Hide button if Picture-in-Picture is not supported or disabled.
+  pipButton.hidden = !document.pictureInPictureEnabled || ytapiplayer_html5_api.disablePictureInPicture;
+
+  pipButton.addEventListener('click', function() {
+    // If there is no element in Picture-in-Picture yet, let's request
+    // Picture-in-Picture for the video, otherwise leave it.
+    if (!document.pictureInPictureElement) {
+      ytapiplayer_html5_api.requestPictureInPicture()
+      .then(pipWindow => {
+        updateVideoSize(pipWindow.width, pipWindow.height);
+        pipWindow.addEventListener('resize', function(event) {
+          updateVideoSize(pipWindow.width, pipWindow.height);
+        });
+      })
+      .catch(error => {
+        console.log(error)
+        // Video failed to enter Picture-in-Picture mode.
+      });
+    } else {
+      document.exitPictureInPicture()
+      .catch(error => {
+        console.error(error)
+        // Video failed to leave Picture-in-Picture mode.
+      });
+    }
+  });
+
+  function updateVideoSize(width, height) {
+    // TODO: Update video size based on pip window width and height.
+  }
+
+  ytapiplayer_html5_api.addEventListener('enterpictureinpicture', function() {
+    // Video element entered Picture-In-Picture mode.
+  });
+
+  ytapiplayer_html5_api.addEventListener('leavepictureinpicture', function() {
+    // Video element left Picture-In-Picture mode.
+  });
