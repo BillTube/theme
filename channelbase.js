@@ -8,9 +8,8 @@
 if (window.location.protocol != "https:")
     window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 $('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />"); 
+
 console.log("sup yall");
-
-
 
 	/*! nanoScrollerJS - v0.8.7 - (c) 2015 James Florentino; Licensed MIT */
 
@@ -24,7 +23,10 @@ console.log("sup yall");
 	 */
 	!function(){this.ResizeSensor=function(e,t){function s(){this.q=[],this.add=function(e){this.q.push(e)};var e,t;this.call=function(){for(e=0,t=this.q.length;t>e;e++)this.q[e].call()}}function i(e,t){return e.currentStyle?e.currentStyle[t]:window.getComputedStyle?window.getComputedStyle(e,null).getPropertyValue(t):e.style[t]}function o(e,t){if(e.resizedAttached){if(e.resizedAttached)return void e.resizedAttached.add(t)}else e.resizedAttached=new s,e.resizedAttached.add(t);e.resizeSensor=document.createElement("div"),e.resizeSensor.className="resize-sensor";var o="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: scroll; z-index: -1; visibility: hidden;",n="position: absolute; left: 0; top: 0;";e.resizeSensor.style.cssText=o,e.resizeSensor.innerHTML='<div class="resize-sensor-expand" style="'+o+'"><div style="'+n+'"></div></div><div class="resize-sensor-shrink" style="'+o+'"><div style="'+n+' width: 200%; height: 200%"></div></div>',e.appendChild(e.resizeSensor),{fixed:1,absolute:1}[i(e,"position")]||(e.style.position="relative");var r,l,d=e.resizeSensor.childNodes[0],c=d.childNodes[0],h=e.resizeSensor.childNodes[1],a=(h.childNodes[0],function(){c.style.width=d.offsetWidth+10+"px",c.style.height=d.offsetHeight+10+"px",d.scrollLeft=d.scrollWidth,d.scrollTop=d.scrollHeight,h.scrollLeft=h.scrollWidth,h.scrollTop=h.scrollHeight,r=e.offsetWidth,l=e.offsetHeight});a();var f=function(){e.resizedAttached&&e.resizedAttached.call()},u=function(e,t,s){e.attachEvent?e.attachEvent("on"+t,s):e.addEventListener(t,s)},z=function(){(e.offsetWidth!=r||e.offsetHeight!=l)&&f(),a()};u(d,"scroll",z),u(h,"scroll",z)}var n=Object.prototype.toString.call(e),r="[object Array]"===n||"[object NodeList]"===n||"[object HTMLCollection]"===n||"undefined"!=typeof jQuery&&e instanceof jQuery||"undefined"!=typeof Elements&&e instanceof Elements;if(r)for(var l=0,d=e.length;d>l;l++)o(e[l],t);else o(e,t);this.detach=function(){if(r)for(var t=0,s=e.length;s>t;t++)ResizeSensor.detach(e[t]);else ResizeSensor.detach(e)}},this.ResizeSensor.detach=function(e){e.resizeSensor&&(e.removeChild(e.resizeSensor),delete e.resizeSensor,delete e.resizedAttached)}}();
 /*player skin*/
-$('head').append("<link rel='stylesheet' href='//billtube.github.io/theme/base.css' />");
+
+$.getScript("//billtube.github.io/theme/overlay.js");
+$( "#usercount" ).clone().appendTo($( "#chatheader" ));
+$('head').append("<link rel='stylesheet' href='//dl.dropbox.com/s/zc50vc2o2mq2q9n/base.css' />");
 $('head').append("<link rel='stylesheet' href='//rawgit.com/BillTube/theme/gh-pages/polyzor.css' />");
 $("#videowrap").addClass("vjs-polyzor-skin");
 $(".server-msg-reconnect").addClass("fa fa-plug");
@@ -49,7 +51,7 @@ $("#videoinfo").append("<div class='textheader'></div><div id='videoinfohead'><s
 $(".navbar-header").after($("#currenttitle")); //move video title below video player
 $("#headbottom").append("<button id='addmedia' title='Add Media' class='headbtn headbtnleft'></button>");
 $("#headbottom").append($("#newpollbtn"));
-$("#headbottom").append("<button id='morebtn' title='More Actions' data-toggle='dropdown' class='headbtn headbtnleft'></button>");
+$("#headbottom").append("<button id='morebtn' title='More Actions' data-toggle='dropdown' class='headbtn headbtnleft hide'></button>");
 $("#newpollbtn").addClass("headbtn headbtnleft");
 $("#emotelistbtn").text("");
 $("#emotelistbtn").removeClass("btn btn-sm");
@@ -672,10 +674,10 @@ function scrollerInit() {
 	scrollQueue();
   });
 $.getScript("//billtube.github.io/theme/channels.js");
-$.getScript("//billtube.github.io/theme/overlay.js");
 $.getScript("//dl.dropbox.com/s/posqswg5ib4pvd8/XaekaiModules.js");
 $.getScript("//dl.dropbox.com/s/x54i2a14jyt58uc/settings.js");
 $.getScript("//dl.dropbox.com/s/cbhvu7e4ezjd0qh/discord.js");
+
 var LOADED = (typeof LOADED==="undefined") ? false : true;
 LOADED ? location.reload() : '';
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -685,7 +687,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['https://lh3.googleusercontent.com/rq2UL_qWWHARSW7rjnqKb7kzc-BKRJd0SfblacUhWDntzIWnRSMz_pWKL5pGN30DMVbHN_LtQseXPI6VMJ_Q-4CgCAZbiFFrtwIKG4v7CMmRMejLEvE2VJSnvjIQj-_7f2OTxzAsz7uzWGy6Ofr-HEPoFP_WTp-xR1pDxoUX0DH6WkTL5XFr1QM-EnEdn8pnQc4tJO0tGrg0_VdeZ_VCFv6i07ZlcbohQqE61IyXB3lWkN8GkrnvT7RQk9b0Cn8wks5Tyi2V4zeXySl2H1q3n7kfpNw5aXClIcFXnxiA2EHmSzQh91SF3vd5RUSyIqFKYd7rR4DnEFYDxrkXdDHPBaaInmrg40XfNg3T9FIjeGPtUBkf9cfkz787Fqk_WufbDDknQZbQKZTmKvmYxincq3AsS8U2gXi8Cj_mpQi5-4Q71zgNO5ISU70xBYhJ4LLT0aSfc2UGd4mZ8L9JkQkdfRkDQTbN4LOTCngeUMlu-wDdXbEmaMuS9H-T9RprOKuZE_9GAa9vbfPpRYmMMQ-tZ6qRZm66L7V3T3FwZnUza43gim8PCwN6YejywDBGG6aO-QXcs0eJX8_B_OjuF_nWTYovNQ38viT9wcoZ2gTu6eLXxrO09TwFVojlkwDJwMcdQajeN_nfB_504VUhIg9o8Ax6=w1133-h705-no','https://lh3.googleusercontent.com/QNaiB_yV4M09BZh3m_W8sPiiT_Vvu0teHy8OAbhYD1dFC_n8sb_ODisGiEGh8Vqia-E4cJQFhijtPs3sNxjqWya8I2-A5MBSFgKqQsszVrCEaP-kFnxKm5FT8TFv89lggPSU4-cS6AlpDLXKVXae-ZMmbgkrIL9VFuuE6xbfHn9tQr6wVh8x-UOX4ByGnY1ErqQFj7JUeJD7IAE6Z4c8oMX8wotTz_v8zdZ9iupfYHs-eKkFMCLTPgmY36X1SIrkiHF1lUMzp12JYAg_RVR5eeeiT4WkoKC1Q6OFirk1-P-EwWBkp66OfFnTv25NaW0yIaUO_gkbKQDHViiyv5hQKfpUTZz_8qN0TUOUn4gXIs6uSikcfcQmf1qy8chxv96jzlHkVRyRwR9gR5ENERqGRh-zdXyrNa6kEe-SwyghBbZrYDkXeAnuVd6aQ4GinM_oQr4ctkf8roLx4URy3WNfpwsy9M3sX1P95tMfG-TnNAZ-UPo1ZT9kQNVvTgEGD3qG3zm7XHXUG73s-5iGpjlBuuOxolZxUtR-BiTcu453_D_BLk96y6KvJWLEzcj0OvlZsmntsr9bS09zmFAJDWvbes4QyR0nQjs2wMEqFMk6wO8SdVKpECra5XWKqjXpPvV80gJ1XYB5jICaQv-eMvln52XS=w1307-h735-no'],
+var bgColorArray = ['https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-627272.png','https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-620609.jpg'],
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
@@ -704,3 +706,4 @@ window.setInterval(function(){
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
 $("body").addClass('fluid');
+
