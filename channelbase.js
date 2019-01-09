@@ -687,7 +687,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-627272.png','https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-620609.jpg'],
+var bgColorArray = ['https://files.catbox.moe/drgzil.png','https://files.catbox.moe/d1uxbp.jpg'],
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
