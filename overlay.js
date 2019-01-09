@@ -26,6 +26,8 @@ $("#VideoOverlay").append($("#voteskip"));
 $("#VideoOverlay").append($("#mediarefresh"));
 $("#VideoOverlay").append("<button id='hidechat' title='Hide Chat' class='btn btn-sm btn-default OLB'>Theater Mode</button>");
 $("#VideoOverlay").append("<button id='showchat' title='show Chat' class='btn btn-sm btn-default OLB'>Regular Mode</button>");
+$("#VideoOverlay").append("<button id='pipButton' title='Picture In Picture' class='btn btn-sm btn-default OLB'>PIP</button>");
+
 $(document).ready(function(){
 	$('#hidechat').on('click', function(){nochat();});
 	$('#showchat').on('click', function(){maxchat();});
