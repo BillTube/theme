@@ -35,7 +35,7 @@ body {
 }
 .btn-default {
     color: #e6e2e5;
-    background-color: rgba(31, 27, 30, 0.77);
+    background-color: rgba(18, 18, 20, 0.87);
     border-color: rgba(132, 142, 152, 0);
     background-image: none!important;
 }
@@ -1761,11 +1761,30 @@ display: block;
 }
 ul#queue {
     list-style: decimal;
-    padding-left: 40px;
-    padding-right: 0px;
+    padding-left: 8px;
+    position: inherit;
+    padding-right: 8px;
+    position: inherit;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: rgba(136, 136, 136, 0.63);
+    color: rgba(146, 148, 154, 0.79);}
+.queue_sortable li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+}
+.queue_sortable li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .panel-primary>.panel-heading {
     color: #BFBFBF;
@@ -1781,11 +1800,21 @@ ul#queue {
     z-index: 1;
     border: none;
 }
+.btn-group, .btn-group-vertical {
+    position: absolute;
+    vertical-align: middle;
+    float: right;
+    right: 40px;
+}
 .qe_time {
+	font-size: 13px;
+padding-left: 20px;
     float: right;
     margin-right: 1%;
     font-family: inherit;
 }
+.queue_sortable li:hover {border-bottom: #2b2b2b 2px solid;}
+
 .alert-info {
     background-color: rgba(0, 0, 0, 0.48);
     border-color: #3dced8;
