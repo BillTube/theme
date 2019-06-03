@@ -1801,7 +1801,6 @@ ul#queue {
     border: none;
 }
 .btn-group, .btn-group-vertical {
-    position: absolute;
     vertical-align: middle;
     float: right;
     right: 40px;
@@ -2556,3 +2555,6 @@ right: 0!important;
 .RatioFill {object-fit: fill;}
 .RatioCover {object-fit: cover;}
 .Buffer {content: 'buffering...';}
+
+.videolist > .queue_entry > .btn-group { position: initial;}
+#queue > .queue_entry > .btn-group {position:absolute;}
