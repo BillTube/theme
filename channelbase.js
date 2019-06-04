@@ -686,7 +686,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['https://files.catbox.moe/drgzil.png','https://files.catbox.moe/d1uxbp.jpg'],
+var bgColorArray = ['https://lh3.googleusercontent.com/W6-pKEkMeofa9Ykr9hAqXm6H0ioeb1LdEi-hwFAt25hCQnC8j6StVVUThqLNrSakrDWbnF7_yxtx8GamZg=w1578-h888-rw-no','https://lh3.googleusercontent.com/jPE8IJY02o_FoltR0PTwNKHLgGVPG9HQpq3dYfkblSQN07O9xfhfq_8ftYDhJhVRY7ecZTIrLcubopAfZQ=w1331-h888-rw-no','https://lh3.googleusercontent.com/uCEncyS9Zq89MQqSnkbi5SjKjIkzL_1T65YxDbVnFHry8k9d1AilBGYdfEizLTmmmHgW5FJL7vrZdMk63w=w950-h534-rw-no','https://lh3.googleusercontent.com/uuhmitjA-GDenaGzz_BrGy73PufMO0LKEFykw--EyItvYWJwvDzIdnO-vQi4QFM3GC-YiMxl2qJiAPA6oA=w950-h534-rw-no'],
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
