@@ -1672,6 +1672,13 @@ strong.username {
 #userlist {
     display: none;
 }
+a.qe_title {
+    text-overflow: ellipsis;
+    max-width: 45ch;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
 [class*="chat-msg"] .username .chatAvatar{
     width:auto;
     max-height:initial;
