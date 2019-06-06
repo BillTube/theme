@@ -491,7 +491,7 @@ width:100%;
 		padding: 5px 0 0 0;
 	}
 	#headbottom .headbtn {
-    color: hsla(216, 26%, 77%, 0.46);
+    color: hsla(216, 19%, 84%, 0.74);
     height: 27px;
     background: none;
     border: none;
@@ -501,13 +501,14 @@ width:100%;
     font-size: 15px;
     vertical-align: initial;
     FONT-family: quicksand;
+    text-transform: uppercase;
+    outline: none;
+    transition: color .3s;
 	}
 .headbtn:hover {
-color: white;
+color: white!important;
 border: 0px;
 border-bottom: 2px rgba(187, 187, 187, 0.21) solid;
--webkit-animation: fadeIn .5s ease-in 1 forwards;
-animation: fadeIn .5s ease-in 1 forwards;
 }
 	.headbtnleft {
 		margin-right: 20px;
