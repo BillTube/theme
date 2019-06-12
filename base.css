@@ -508,7 +508,6 @@ width:100%;
 #headbottom:hover, .headbtn:hover {
 color: white!important;
 border: 0px;
-border-bottom: 2px rgba(187, 187, 187, 0.21) solid;
 }
 	.headbtnleft {
 		margin-right: 20px;
