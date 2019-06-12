@@ -505,7 +505,7 @@ width:100%;
     outline: none;
     transition: color .3s;
 	}
-.headbtn:hover {
+#headbottom:hover, .headbtn:hover {
 color: white!important;
 border: 0px;
 border-bottom: 2px rgba(187, 187, 187, 0.21) solid;
@@ -1023,7 +1023,7 @@ img.kek:hover {
     border-radius: 4px;
 }
 .OLB:hover {
-  background-color: rgba(255, 255, 255, 0.4)!important;
+  background-color: rgba(0, 0, 0, 0.55)!important;
 }
 .navbar {
     margin-bottom: 0px;
@@ -1668,6 +1668,7 @@ strong.username {
     background-color: rgba(19, 18, 18, 0.81);
     border-color: rgba(30, 32, 35, 0);
     border-bottom: 0px solid black;
+	text-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
 }
 #userlist {
     display: none;
@@ -1946,10 +1947,10 @@ background-color: rgba(133, 115, 159, 0.25);
     font-size: 12px;
 }
 .btn:hover {
-    border-color: rgba(0,0,0,.6);
-    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-    background: #232323;
-    transition: left 0.6s 0s, background .2s;
+    text-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    border-color: rgb(16, 16, 16);
+    background: #2323234a;
+    transition: left 0.9s 0s, background .2s;
 }
 
 #VideoOverlay {
