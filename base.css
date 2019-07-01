@@ -65,6 +65,11 @@ body {
 	  bottom        : 0;
 	  left          : 0;
 	  margin-right: -10px!important;
+	 -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 1s ease-out;
+   -ms-transition: all 1s ease-out;
+   transition: all 0.5s ease-out;
 	}
 .nano > .nano-content:hover {
 margin-right: 0px!important;
