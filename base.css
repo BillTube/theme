@@ -64,8 +64,13 @@ body {
 	  right         : 0;
 	  bottom        : 0;
 	  left          : 0;
-	  margin-right: 0px!important;
+	  margin-right: -11px!important;
 	}
+.nano > .nano-content:hover {
+margin-right: 0px!important;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+}
 	.nano > .nano-content:focus {
 	  outline: thin dotted;
 	}
@@ -306,7 +311,7 @@ width:100%;
 	}
 	#videowrap {
 		padding: 0;
-		padding-left: 14px;
+		padding-left: 15px;
 		padding-right: 0px;
 	}
 	#leftpane, #leftpane-inner, #pollwrap {
