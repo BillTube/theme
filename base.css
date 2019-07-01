@@ -64,7 +64,7 @@ body {
 	  right         : 0;
 	  bottom        : 0;
 	  left          : 0;
-	  margin-right: -11px!important;
+	  margin-right: -10px!important;
 	}
 .nano > .nano-content:hover {
 margin-right: 0px!important;
@@ -205,6 +205,9 @@ input[type="checkbox"]:checked:after {
 }
 #announcements,.container-fluid .col-md-12,#motd .text-center {
 	width: auto;
+}
+.row {
+    margin-right: 15px;
 }
 .row:after{
 		clear: none;
