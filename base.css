@@ -1617,6 +1617,11 @@ img.chat-avatar.chat-avatar_small:hover:after {
     border-radius: 8px;
     transform: scale(0.7);
     box-shadow: 0 20px 25px -20px #131313d1;
+	   -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+   -ms-transition: all 1s ease-out;
+   transition: all 1s ease-out;
 }
 .channel-emote:hover {
     transform: scale(1.2);
