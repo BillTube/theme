@@ -70,6 +70,8 @@ body {
    -o-transition: all 1s ease-out;
    -ms-transition: all 1s ease-out;
    transition: all 0.5s ease-out;
+	scrollbar-color: #0b0b0b52 #8d8d8d45;
+scrollbar-width: thin;
 	}
 .nano > .nano-content:hover {
 margin-right: 0px!important;
@@ -1095,7 +1097,7 @@ img.kek:hover {
 
 .darktheme .nano > .nano-pane > .nano-slider {
     background: hsla(0, 0%, 100%, 0.15);
-    width: 7px;
+    width: 9px;
     float: right;
     transition: background ease 1.1s;
 }
