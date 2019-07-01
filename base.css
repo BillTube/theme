@@ -207,7 +207,7 @@ input[type="checkbox"]:checked:after {
 	width: auto;
 }
 .row {
-    margin-right: 15px;
+    margin-right: 0px;
 }
 .row:after{
 		clear: none;
