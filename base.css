@@ -208,7 +208,7 @@ input[type="checkbox"]:checked:after {
 	padding-right: 0;
 }
 div#videowrap {
-	margin-bottom: 9px !important;
+	margin-bottom: 4px !important;
 	background: black;
 height:100%;
 width:100%;
@@ -1073,7 +1073,7 @@ img.kek:hover {
 	background-color: hsla(0, 0%, 27%, 0.01);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: hsla(290, 6%, 34%, 0.58);
+    background-color: hsla(290, 6%, 34%, 0);
     border: 0px solid hsl(0,0%,40%);
     border-radius: 10px;
 }
@@ -1118,17 +1118,16 @@ img.kek:hover {
 }
 /* Inputs */
 	/* Text Inputs */
-	input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
-    background-color: hsla(0, 0%, 0%, 0.57)!important;
+    background-color: hsla(0, 0%, 0%, 0.78)!important;
     border-top: 0px solid hsl(0, 0%, 29%);
-    color: hsl(0, 0%, 63%);
+    color: hsl(0, 0%, 83%);
 	font-size: 12px;
     -webkit-font-smoothing: antialiased
      border-bottom: 1px solid rgba(177, 157, 157, 0.25);
 	}
 	input.form-control[type="text"]:focus, input.form-control[type="password"]:focus, input.form-control[type="email"]:focus, textarea.form-control:focus {
 		border: 1px solid hsl(0, 0%, 8%);
-    border-bottom: 2px solid #3F7A96;
+    border-bottom: 1px solid #fff;
 	}
 
 	/* Buttons */
@@ -1305,8 +1304,9 @@ body {
 }
 /* Chat */
 	div#messagebuffer, div#userlist {
-border: 0px solid hsl(0, 0%, 18%);
-background: #060606d1;
+border-bottom: 1px solid hsl(0, 0%, 50%);
+    background: #060606c7;
+	border: 0px solid #aaaaaa;
 	}
 	.nick-hover {
 		background: hsla(0, 0%, 6%, 0.03);
