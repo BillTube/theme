@@ -1089,7 +1089,7 @@ img.kek:hover {
 
 .darktheme .nano > .nano-pane > .nano-slider {
     background: hsla(0, 0%, 100%, 0.15);
-    width: 6px;
+    width: 7px;
     float: right;
     transition: background ease 1.1s;
 }
