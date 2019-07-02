@@ -1010,7 +1010,7 @@ img.kek:hover {
     display: block;
 }
 .OLB {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.01);
     transition: all 0.3s ease-in-out;
 	border: 0;
     font-size: 14px;
@@ -1035,11 +1035,11 @@ img.kek:hover {
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 0px solid rgba(255, 255, 255, 0.05);
     border-radius: 4px;
 }
 .OLB:hover {
-  background-color: rgba(0, 0, 0, 0.55)!important;
+  background-color: rgba(0, 0, 0, 0.25)!important;
 }
 .navbar {
     margin-bottom: 0px;
@@ -1969,13 +1969,14 @@ background-color: rgba(133, 115, 159, 0.25);
     font-size: 12px;
 }
 .btn:hover {
-    text-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    text-shadow: 0 0 5px #228dff38, 0 0 10px #228dff7d, 0 0 15px #228dff66, 0 0 20px #ffffff26, 0 0 35px #ffffff2b;
     border-color: rgb(16, 16, 16);
     background: #2323234a;
     transition: left 0.9s 0s, background .2s;
 }
 
 #VideoOverlay {
+background: linear-gradient(180deg,rgba(0,0,0,.8) 0,rgba(0,0,0,.35) 60%,transparent);
   -moz-transition: opacity 1000ms ease;
   transition: opacity 1000ms ease;
     top: 0;
@@ -1985,6 +1986,9 @@ background-color: rgba(133, 115, 159, 0.25);
     height: 50px;
     padding: 10px;
     z-index:1000000;
+user-select: none;
+    will-change: opacity;
+    pointer-events: auto;
 }
 
 .drink {
