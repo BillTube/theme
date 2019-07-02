@@ -2595,3 +2595,7 @@ right: 0!important;
 
 .videolist > .queue_entry > .btn-group { position: initial;}
 #queue > .queue_entry > .btn-group {position:absolute;}
+#pipButton {display:none;}
+#pipButton:not(*:root) { /* Supports only WebKit browsers */
+  display: inline-block;
+}
