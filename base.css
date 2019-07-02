@@ -1242,7 +1242,7 @@ form#logoutform {
 }
 
 .navbar-inverse .navbar-brand {
-color: #99a4a9;
+color: #e1e7ea;
 font-weight: 600;
 }
 .navbar-brand {
@@ -1399,7 +1399,14 @@ border-bottom: 1px solid hsl(0, 0%, 50%);
     overflow-wrap: break-word;	
     max-height: 35px;
     font-weight: 100;
+		opacity:0.5;
+		transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 	}
+#currenttitle:hover {
+opacity:1;
+}
 	.section, .well, #controlsrow {
     padding: 4rem;
     margin-left: 5rem;
