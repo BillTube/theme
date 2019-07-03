@@ -426,7 +426,7 @@ return div;
 }
 
 $(document).ready(function() {
-$('<link id="chanfavicon" href="//cdn1.imggmi.com/uploads/2019/6/3/531e108fc96b064296865f38e808c4b7-full.png" type="image/x-icon" rel="shortcut icon" />')
+$('<link id="chanfavicon" href="https://lh3.googleusercontent.com/UEy_fI47EiOnT8957PPRrnggiojAo4bjfva7dCvxgQA31wlqZB0RQkNlQhh2LZTPkmhUZaWZht7SzqntDm2NGM0JcX2mbo9nCzNMiXnR6Y8CvjBub7qKezgbSzHWBdAsiTWP5wsj-JfdMALe7yARz9oTZCwqO89NA8MyUOiTq7Ns6w9moanDlb7u1McxFkCjG-mvNIHmerEuDCjiyT77AgFTSIOML7ae5UDUyv5-Djl1vSszTE8SV7fLTg3pIkd1s6SoKQR2MXkFX5-feU9MYN65gUOzLhnqoJy5XaGzXxuhcRGFdLCNTp4UPhwIFsZOFbnAnUkxC8LjxNyP_uZg5Vqe8gR5D_ImPW_q0UwKShBI6Ft2lPSobo-z9ql68RJSIwE2FqypN3SoCPXT6hq6YNDZBphVOrnZEqWeWYU2t92-cx0jzkLqGCGGyuyF2Dc0iOPke0AAWcnBEKTpnwrUq1me0deXrc7DRXzEYrbO_nE6Sju_0jWZQpiVxv0TdrKxRvXO3m2TyBGkUqg8AQ612LyeNSY88F3WDtiEhI4HAnknz98Xqng8yKDDASNROnwoKmg5Nn25IOxBAA6htIWAyOP7ZmpSI9Hs7_p7-FKzm7tPgd7zkKXq5kfNcHvUhQwSHgDrIV9sfPcjDcD2PA2T4pODBbutRCg=w100-h129-no" type="image/x-icon" rel="shortcut icon" />')
 .appendTo("head");});
 
 // The HorizontalScroller Class accepts a jQuery object as its only argument
