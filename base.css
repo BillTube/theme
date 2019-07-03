@@ -2614,6 +2614,9 @@ right: 0!important;
 }
 .colorbg {
     padding: 3px;
-    margin-left: 18px;
-margin-right: 14px;
+    margin-left: 19px;
+}
+input#colorID {
+    margin-right: 10px;
+    width: 59px;
 }
