@@ -2612,3 +2612,7 @@ right: 0!important;
 #pipButton:not(*:root) { /* Supports only WebKit browsers */
   display: inline-block;
 }
+.colorbg {
+    padding: 3px;
+    margin-left: 18px;
+}
