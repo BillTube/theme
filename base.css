@@ -1686,7 +1686,7 @@ strong.username {
     -ms-animation: fadein 4s; /* Internet Explorer */
     -o-animation: fadein 4s; /* Opera < 12.1 */
     animation: fadein 4s;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
