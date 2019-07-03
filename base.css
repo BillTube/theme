@@ -2593,30 +2593,21 @@ width: 23%!important;
 }
 .leftchatvideo {
 float: right!important;
-right: 0!important;
-}
+right: 0!important;}
 .darkerbg {opacity: 0.10!important;
     -webkit-transition: all 100ms;
     transition: all 100ms;}
 .overlayfix {
     position: inherit!important;
-    background: #2121212b;
-}
+    background: #2121212b;}
 .RatioFill {object-fit: fill;}
 .RatioCover {object-fit: cover;}
 .Buffer {content: 'buffering...';}
-
 .videolist > .queue_entry > .btn-group { position: initial;}
 #queue > .queue_entry > .btn-group {position:absolute;}
 #pipButton {display:none;}
 #pipButton:not(*:root) { /* Supports only WebKit browsers */
-  display: inline-block;
-}
-.colorbg {
-    padding: 3px;
-    margin-left: 19px;
-}
-input#colorID {
-    margin-right: 10px;
-    width: 59px;
-}
+display: inline-block;}
+.colorbg {padding: 3px;margin-left: 19px;}
+input#colorID {margin-right: 10px;width: 59px;}
+.videolist  { overflow-y:auto!important;}
