@@ -383,7 +383,7 @@ width:100%;
 		}
 			/*Specifially user dropdowns*/
 			.user-dropdown {
-				padding: 5px 0 3px 0;
+				padding: 10px 2px 3px 64px;
 			}
 			.user-dropdown strong {
 				padding-left: 23px;
