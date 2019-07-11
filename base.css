@@ -1694,7 +1694,7 @@ strong.username {
 	.navbar {
     background: hsla(0, 0%, 13%, 0.54);
 	}
-	.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+	.btn-default.focus, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
     color: #fff;
     background-color: rgba(19, 18, 18, 0.81);
     border-color: rgba(30, 32, 35, 0);
@@ -1761,6 +1761,7 @@ img.chat-picture {
 button#mediarefresh {
     float: right;
 }
+.btn-default.active.collapsed { text-shadow: none; }
 
 button.vjs-fullscreen-control.vjs-control.vjs-button {
     display: none;
