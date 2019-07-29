@@ -1,6 +1,23 @@
 @import url(//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
 @import url(//fonts.googleapis.com/css?family=Quicksand:400,700);
 
+.lazyload {
+	filter:blur(3px);
+	transition:filter 0.5s ease-in-out 0.2s;
+}
+img.lazyloaded,
+ .image.lazyloaded {
+	filter:blur(0);
+	}
+
+#queue::-webkit-scrollbar-thumb {
+    background-color: hsla(227, 83%, 95%, 0.55);
+}
+#queue::-webkit-scrollbar {
+    width: 8px;
+    background: #21202070;
+}
+
 #chatsettings {
     display: none;
 }
