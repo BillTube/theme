@@ -676,9 +676,7 @@ $.getScript("//billtube.github.io/theme/channels.js");
 $.getScript("//dl.dropbox.com/s/posqswg5ib4pvd8/XaekaiModules.js");
 $.getScript("//dl.dropbox.com/s/x54i2a14jyt58uc/settings.js");
 $.getScript("//dl.dropbox.com/s/cbhvu7e4ezjd0qh/discord.js");
-//testing this out
-$.getScript("//dl.dropbox.com/s/39iz5fdgzxufp7b/lazyloadbilltheme.js");
-//could go terribly wrong!
+
 
 var LOADED = (typeof LOADED==="undefined") ? false : true;
 LOADED ? location.reload() : '';
@@ -708,4 +706,6 @@ window.setInterval(function(){
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
 $("body").addClass('fluid');
-
+//testing this out
+$.getScript("//dl.dropbox.com/s/39iz5fdgzxufp7b/lazyloadbilltheme.js");
+//could go terribly wrong!
