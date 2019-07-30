@@ -2635,3 +2635,9 @@ display: inline-block;}
 .colorbg {padding: 3px;margin-left: 19px;}
 input#colorID {margin-right: 10px;width: 59px;}
 .videolist  { overflow-y:auto!important;}
+@-moz-document url-prefix() {
+  .queue_sortable li::before {
+    -webkit-text-fill-color: chocolate!important;
+   background-image: none!important;
+  }
+}
