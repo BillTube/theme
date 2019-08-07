@@ -17,7 +17,22 @@ img.lazyloaded,
     width: 8px;
     background: #21202070;
 }
+/*glow for webkit*/
 
+@-webkit-keyframes neon1 {
+  from {
+   text-shadow: 0 0 1px #ffffff17, 0 0 2px #ffffff17, 0 0 3px #ffffff1f, 0 0 4px #c7a8d440, 0 0 5px #b095bb40, 0 0 6px #c4a2d236, 0 0 15px #d8d69d2e, 0 0 18px #0cff6d30;
+  }
+  to {
+    text-shadow: 0 0 4px #ffffff30, 0 0 2px #ffffff26, 0 0 8px #ffffff1c, 0 0 2px #bfabc71f, 0 0 5px #b7a9bd17, 0 0 2px #b80cff1f, 0 0 5px #b80cff21, 0 0 6px #0037ff2e;
+  }
+}
+
+.userlist_owner {
+  -webkit-animation: neon1 3.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 3.5s ease-in-out infinite alternate;
+  animation: neon1 3.5s ease-in-out infinite alternate;
+}
 #chatsettings {
     display: none;
 }
