@@ -1048,7 +1048,6 @@ img.kek:hover {
 }
 .OLB {
     background: rgba(0, 0, 0, 0.01);
-    transition: all 0.3s ease-in-out;
 	border: 0;
     font-size: 14px;
     color: rgba(210, 210, 210, 0.84);
@@ -1074,9 +1073,15 @@ img.kek:hover {
     background-image: none;
     border: 0px solid rgba(255, 255, 255, 0.05);
     border-radius: 4px;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
 }
 .OLB:hover {
   background-color: rgba(0, 0, 0, 0.25)!important;
+  -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .navbar {
     margin-bottom: 0px;
