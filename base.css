@@ -1525,9 +1525,6 @@ opacity:1;
 			border-bottom: 2px solid hsl(358, 79%, 45%);
 		}
 .queue_active {
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.12),rgba(255, 255, 255, 0.12));
-    background-image: linear-gradient(rgba(255, 255, 255, 0.12),rgba(255, 255, 255, 0.12));
-    background-repeat: no-repeat;
     box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.79);
 }
 	/* Footer */
