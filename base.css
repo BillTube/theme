@@ -527,16 +527,17 @@ width:100%;
 		width: 0;
 		height: 2px;
 	}
-	#ss7time {
-	color: hsla(0, 0%, 100%, 0.65);
-	height: 24px;
-    position: relative;
-    float: right;
-    margin-top: 24px;
-    vertical-align: bottom;
-    font-size: 24px;
-    line-height: 0px;
-    font-family: quicksand;
+#ss7time {
+color: hsla(0, 0%, 100%, 0.65);
+height: 24px;
+position: relative;
+float: right;
+margin-top: 24px;
+vertical-align: bottom;
+font-size: 2em;
+line-height: 0px;
+font-family: quicksand;
+text-shadow: 0 0 5px #228dffb8, 0 0 10px #228dffd4, 0 0 15px #228dffb8, 0 0 20px #ffffff7a;
 	}
 	/*headerbuttons*/
 	#headbottom {
@@ -1477,7 +1478,7 @@ opacity:1;
 	}
 	/* headerbuttons */
 	#headbottom {
-		border-top: 1px solid hsl(0, 0%, 20%);
+		border-top: 0px solid hsl(0, 0%, 20%);
 	}
 	.headbtnleft {
 		margin-right: 20px;
