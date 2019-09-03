@@ -503,8 +503,8 @@ width:100%;
 		border: none;
 		border-radius: 0;
 		background: none;
-		position: absolute;
-                top: 17px;
+    margin-top: 17px;
+    float: left;
 	}
 #chatheader, #videowrap-header {
 	border: 0px solid #ccc!important;
