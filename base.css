@@ -2683,3 +2683,15 @@ input#colorID {margin-right: 10px;width: 59px;}
    background-image: none!important;
   }
 }
+.btn-groupnotif {
+    vertical-align: middle;
+    float: left;
+    right: 0px;
+}
+#AudioNoticeControls {
+    display: block;
+    width: 100%;
+    left: 30%;
+    position: relative;
+    margin: auto;
+}
