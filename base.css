@@ -2114,6 +2114,15 @@ user-select: none;
     text-align: center;
     display: inline-block;
     width: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: #424242;
+    color: #424242;
+    text-transform: uppercase;
+    font-style: normal;
+    border-radius: 8px;
+    padding: 2px;
+    font-size: 7pt;
 }
 .vjs-volume-menu-button {
     bottom: 20px;
