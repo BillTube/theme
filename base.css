@@ -9,6 +9,12 @@ img.lazyloaded,
  .image.lazyloaded {
 	filter:blur(0);
 	}
+.navbar-header {
+    float: left;
+    transition: color 200ms cubic-bezier(.55, 0, .1, 1);
+    position: relative;
+    display: inline;
+}
 
 #queue::-webkit-scrollbar-thumb {
     background-color: hsla(227, 83%, 95%, 0.55);
@@ -506,7 +512,7 @@ width:100%;
 		background: none;
     margin-top: 17px;
     float: left;
-		position: absolute;
+		position: relative;
 	}
 #chatheader, #videowrap-header {
 	border: 0px solid #ccc!important;
