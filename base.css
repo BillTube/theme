@@ -1294,6 +1294,7 @@ font-weight: 600;
     float: left;
     padding: 15px;
     font-size: 19px;
+position: relative;
 }
 
 body {
