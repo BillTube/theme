@@ -1269,7 +1269,6 @@ form#logoutform {
 	color: hsl(0,0%,53%);
 	border: none;
 	max-height: 50px;
-    //overflow: hidden;
 }
 @media (max-width: 880px){
 	.navbar{
