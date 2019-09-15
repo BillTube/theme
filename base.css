@@ -1,5 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
-@import url(//fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(//fonts.googleapis.com/css?family=Montserrat:100,200,300,400&display=swap);
 
 .lazyload {
 	filter:blur(3px);
@@ -488,7 +487,6 @@ width:100%;
 		overflow-x: hidden;
 		text-align: left;
 		height: auto;
-		font-family: quicksand;
 		
 	}
 		.section {
@@ -518,8 +516,8 @@ width:100%;
 	border: 0px solid #ccc!important;
 }
 #usercount {
-    font-family: Quicksand;
-    font-size: 15px;
+    font-weight: 100;
+	font-size: 15px;
 	    display: block;
     color: #a1b3bb;
 }
@@ -544,7 +542,6 @@ margin-top: 24px;
 vertical-align: bottom;
 font-size: 2em;
 line-height: 0px;
-font-family: quicksand;
 text-shadow: 0 0 5px #228dffb8, 0 0 10px #228dffd4, 0 0 15px #228dffb8, 0 0 20px #ffffff7a;
 	}
 	/*headerbuttons*/
@@ -563,7 +560,7 @@ text-shadow: 0 0 5px #228dffb8, 0 0 10px #228dffd4, 0 0 15px #228dffb8, 0 0 20px
     box-shadow: none;
     font-size: 15px;
     vertical-align: initial;
-    FONT-family: quicksand;
+    font-weight: 100;
     text-transform: uppercase;
     outline: none;
     transition: color .3s;
@@ -936,8 +933,8 @@ img.kek:hover {
     float: right;
     padding-right: 0px;
     padding-top: 5px;
-    font-family: Quicksand;
-    opacity: 0.5;
+    font-weight: 100;
+	opacity: 0.5;
 }
 @media only screen and (max-width: 480px) {
   .horiz-scroll .scroller .left-scroll p,
@@ -1172,7 +1169,7 @@ img.kek:hover {
     border-left: 0px solid rgba(255,255,255,.1);
     font-size: 10px;
     letter-spacing: 0.01em;
-    font-family: Quicksand;
+    font-weight: 100;
 }
 .server-msg-reconnect {
     border: 0px solid #3C3C3C;
@@ -1256,7 +1253,6 @@ p#currenttitle {
     width: auto;
     float: left;
     padding: 15px;
-    font-family: quicksand;
     font-size: 1.4rem;
 }
 form#logoutform {
