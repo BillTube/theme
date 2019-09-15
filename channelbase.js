@@ -9,6 +9,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 $("#ytapiplayer_html5_api").attr("muted","");
 $("#ytapiplayer_html5_api").attr("playsinline","");
 $("#main").after($("#chatwrap"));
+$("#chatwrap").after($("#motdwrap"));
 $('head').append("<link rel='stylesheet' href='//dl.dropbox.com/s/sjb7rw59p0qnx6a/mobile.css' />"); 
 }else {
 		/*! nanoScrollerJS - v0.8.7 - (c) 2015 James Florentino; Licensed MIT */
