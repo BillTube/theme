@@ -1920,9 +1920,13 @@ padding-left: 20px;
     background-color: #4a4a4a4d;
 }
 a:focus, a:hover {
-    color: #eae7ef;
+    color: #ffffff;
     text-decoration: solid!important;
-    font-weight: 800;
+    justify-content: space-around;
+    transition: 0.5s ease;
+    transition: 0.2s ease-in all;
+    text-shadow: 3px 3px 10px rgba(14, 14, 14, 0.99);
+cursor: pointer;
 }
 .alert-info {
     background-color: rgba(0, 0, 0, 0.48);
