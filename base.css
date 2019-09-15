@@ -45,6 +45,8 @@ img.lazyloaded,
 * {
   box-sizing: border-box;
   -webkit-touch-callout: none;
+-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
     color: #dcdcdc8c;
@@ -60,6 +62,7 @@ img.lazyloaded,
 }
 body {
     font-size: 1.3em;
+    transition: background .3s;
     font-family: 'Montserrat', sans-serif;
     color: #e5f1f7e8;
     background-color: rgb(28,31,37);
