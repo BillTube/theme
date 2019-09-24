@@ -2617,9 +2617,11 @@ input[type="range"]::-webkit-slider-thumb:active {
   }
 }
 .poll-notify {
-    color: #f00;
-    font-weight: 100;
+color: #ff6f27;
+    font-weight: 200;
+    font-size: 22px;
     animation: flickering 5s infinite;
+    text-align: center;
 }
 .close {
     float: right;
