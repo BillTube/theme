@@ -2714,3 +2714,9 @@ input#colorID {margin-right: 10px;width: 59px;}
     margin: auto;
 }
 .vjs-menu-button-popup .vjs-menu {height: 3em!important;}
+.hw {
+    border: 1px solid #ff5200b0;
+    box-shadow: 0px 1px 81px #f56410e6;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
+}
