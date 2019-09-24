@@ -692,7 +692,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['https://lh3.googleusercontent.com/W6-pKEkMeofa9Ykr9hAqXm6H0ioeb1LdEi-hwFAt25hCQnC8j6StVVUThqLNrSakrDWbnF7_yxtx8GamZg=w1578-h888-rw-no','https://lh3.googleusercontent.com/jPE8IJY02o_FoltR0PTwNKHLgGVPG9HQpq3dYfkblSQN07O9xfhfq_8ftYDhJhVRY7ecZTIrLcubopAfZQ=w1331-h888-rw-no','https://lh3.googleusercontent.com/uCEncyS9Zq89MQqSnkbi5SjKjIkzL_1T65YxDbVnFHry8k9d1AilBGYdfEizLTmmmHgW5FJL7vrZdMk63w=w950-h534-rw-no','https://lh3.googleusercontent.com/uuhmitjA-GDenaGzz_BrGy73PufMO0LKEFykw--EyItvYWJwvDzIdnO-vQi4QFM3GC-YiMxl2qJiAPA6oA=w950-h534-rw-no'],
+var bgColorArray = ['https://lh3.googleusercontent.com/vHQ3IXBYkiiCp6YEh8ECypwoQfB16vGw6erOHejr6RXpywvdJ1KJmmN-JeaJuN4w4R2ActgC91OpKHl0aQ=w1596-h898-rw-no','https://lh3.googleusercontent.com/hWyUDFmvz2F9JHRnzqgJIAxIXVkNrTwmv1dOYX6rKHxtwHi2f_bIw4Js7IsFfTOV3z1yOLc4k2rg_IZqRQ=w901-h507-rw-no','https://lh3.googleusercontent.com/ltV8j6gy_fZNM3YsM77aq3qKANyJ3YnA4IgsK7ZolBLW5Z_9P1TrhHl9paq0gFq-FaHl4r7F65jponaBeA=w901-h507-rw-no','https://lh3.googleusercontent.com/PPD-da6C5d3jbx5104QpQBoeV6ZVpzbwIZ0CSl8ELlOjI72g4QxtApowko1FfZVgImaQD6RFRmO3CQKaYw=w901-h507-rw-no'],
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
