@@ -1186,16 +1186,19 @@ img.kek:hover {
 /* Inputs */
 	/* Text Inputs */
 	input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
-    background-color: hsla(0, 0%, 0%, 0.78)!important;
-    border-top: 0px solid hsl(0, 0%, 29%);
+    background-color: hsla(0, 0%, 6%, 0.98)!important;
+    border-top: 1px solid hsla(0, 0%, 29%, 0.11);
     color: hsl(0, 0%, 83%);
 	font-size: 12px;
     -webkit-font-smoothing: antialiased
      border-bottom: 1px solid rgba(177, 157, 157, 0.25);
+			-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 	}
 	input.form-control[type="text"]:focus, input.form-control[type="password"]:focus, input.form-control[type="email"]:focus, textarea.form-control:focus {
-		border: 1px solid hsl(0, 0%, 8%);
-    border-bottom: 1px solid #fff;
+		border-top: 2px solid hsl(280, 17%, 26%)!important;
+    border-bottom: 0px solid #fff;
+    background-color: #0b0a0cd9!important;
 	}
 
 	/* Buttons */
