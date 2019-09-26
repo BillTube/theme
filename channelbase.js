@@ -114,11 +114,15 @@ $("#mainpage").append("<div class='nano' id='maincontain'></div>");
 $("#maincontain").append("<div class='nano-content'></div>");
 $("#maincontain .nano-content").append($("#mainpage > .container-fluid"));
 $("body").addClass("fluid");
+$('video').attr('crossOrigin' , 'anonymous');
 $("#usertheme").attr("href", "/css/themes/slate.css");
 $("#maincontain .nano-content").append($("#mainpage > .container"));
 $("#messagebuffer").addClass("nano-content");
 $("#messagebuffer").after("<div class='nano'></div>");
 $("#chatwrap .nano").append($("#messagebuffer"));
+	//lets make sure chrome doesnt fuck with chat
+$('#chatwrap').children('.form-control').before("<input type='text' id='username'style='width:0;height:0;visibility:hidden;position:absolute;left:0;top:0' /><input type='password'style='width:0;height:0;visibility:hidden;position:absolute;left:0;top:0' />");
+$('.form-control').attr('autocomplete' , 'off');
 $(".nano").nanoScroller();
 //middle draggable handle
 $("#mainpage").append("<div id='mHandle-left' class='mHandle'></div> <div id='mHandle-right' class='mHandle'></div><div id='mHandle-mid' class='mHandle'></div>");
