@@ -1693,7 +1693,7 @@ img.chat-avatar.chat-avatar_small:hover:after {
 }
 .channel-emote:hover {
     transform: scale(1.2);
-      cursor: pointer;
+    user-select: none;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: all 1s cubic-bezier(1, -0.565, 0.075, 1.495);
   transition: all 1s cubic-bezier(1, -0.565, 0.075, 1.495);
