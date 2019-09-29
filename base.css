@@ -86,6 +86,12 @@ body {
     top: 10px;
     padding-right: 5px;
 }
+div#top-video-controls {
+    position: absolute;
+    top: 8px;
+    float: left;
+    left: 15px;
+}
 .lel {
     background: rgba(16, 16, 16, 0.21);
     border: 1px solid #191919;
