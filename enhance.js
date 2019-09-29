@@ -991,127 +991,6 @@ window.cytubeEnhanced.addModule('additionalChatCommands', function (app, setting
     });
 });
 
-},{}],6:[function(require,module,exports){
-require('jquery.selection');
-
-window.cytubeEnhanced.addModule('bbCodesHelper', function (app, settings) {
-    'use strict';
-
-    var that = this;
-
-    var defaultSettings = {
-        templateButtonsOrder: ['b', 'i', 'sp', 'code', 's'],
-        templateButtonsAnimationSpeed: 150
-    };
-    settings = $.extend({}, defaultSettings, settings);
-
-
-    if ($('#chat-controls').length === 0) {
-        $('<div id="chat-controls" class="">').appendTo("#chatwrap");
-    }
-
-
-    this.handleMarkdownHelperBtnClick = function ($markdownHelperBtn, $markdownTemplatesWrapper) {
-        if ($markdownHelperBtn.hasClass('btn-default')) { //closed
-            $markdownHelperBtn.removeClass('btn-default');
-            $markdownHelperBtn.addClass('btn-success');
-
-            $markdownTemplatesWrapper.show();
-            $markdownTemplatesWrapper.children().animate({left: 0}, settings.templateButtonsAnimationSpeed);
-        } else { //opened
-            $markdownHelperBtn.removeClass('btn-success');
-            $markdownHelperBtn.addClass('btn-default');
-
-            $markdownTemplatesWrapper.children().animate({left: -$markdownTemplatesWrapper.width()}, settings.templateButtonsAnimationSpeed, function () {
-                $markdownTemplatesWrapper.hide();
-            });
-        }
-    };
-
-    this.$markdownHelperBtn = $('<button id="markdown-helper-btn" type="button" class="btn btn-sm btn-default" title="' + app.t('markdown[.]Markdown helper') + '">')
-        .html('<i class="glyphicon glyphicon-font"></i>')
-        .on('click', function () {
-            that.handleMarkdownHelperBtnClick($(this), that.$markdownTemplatesWrapper);
-
-            app.userConfig.toggle('bb-codes-opened');
-        });
-
-    if ($('#chat-help-btn').length !== 0) {
-        this.$markdownHelperBtn.insertBefore('#chat-help-btn');
-    } else {
-        this.$markdownHelperBtn.appendTo('#chat-controls');
-    }
-
-
-    this.$markdownTemplatesWrapper = $('<div class="btn-group markdown-helper-templates-wrapper">')
-        .insertAfter(this.$markdownHelperBtn)
-        .hide();
-
-    if (app.userConfig.get('bb-codes-opened')) {
-        this.handleMarkdownHelperBtnClick(this.$markdownHelperBtn, this.$markdownTemplatesWrapper);
-    }
-
-
-    /**
-     * Markdown templates
-     *
-     * To add your template you need to also add your template key into settings.templateButtonsOrder
-     * @type {object}
-     */
-    this.markdownTemplates = {
-        'b': {
-            text: '<b>B</b>',
-            title: app.t('markdown[.]Bold text')
-        },
-        'i': {
-            text: '<i>I</i>',
-            title: app.t('markdown[.]Cursive text')
-        },
-        'sp': {
-            text: 'SP',
-            title: app.t('markdown[.]Spoiler')
-        },
-        'code': {
-            text: '<code>CODE</code>',
-            title: app.t('markdown[.]Monospace')
-        },
-        's': {
-            text: '<s>S</s>',
-            title: app.t('markdown[.]Strike')
-        }
-    };
-
-    var template;
-    for (var templateIndex = 0, templatesLength = settings.templateButtonsOrder.length; templateIndex < templatesLength; templateIndex++) {
-        template = settings.templateButtonsOrder[templateIndex];
-
-        $('<button type="button" class="btn btn-sm btn-default" title="' + this.markdownTemplates[template].title + '">')
-            .html(this.markdownTemplates[template].text)
-            .data('template', template)
-            .appendTo(this.$markdownTemplatesWrapper);
-    }
-
-
-    this.handleMarkdown = function (templateType) {
-        if (this.markdownTemplates.hasOwnProperty(templateType)) {
-            $('#chatline').selection('insert', {
-                text: '[' + templateType + ']',
-                mode: 'before'
-            });
-
-            $('#chatline').selection('insert', {
-                text: '[/' + templateType + ']',
-                mode: 'after'
-            });
-        }
-    };
-    this.$markdownTemplatesWrapper.on('click', 'button', function () {
-        that.handleMarkdown($(this).data('template'));
-
-        return false;
-    });
-});
-
 },{"jquery.selection":2}],7:[function(require,module,exports){
 window.cytubeEnhanced.addModule('chatAvatars', function (app) {
     'use strict';
@@ -1960,120 +1839,7 @@ window.cytubeEnhanced.addModule('navMenuTabs', function (app) {
     });
 });
 
-},{}],13:[function(require,module,exports){
-/**
- * Saves messages from chat which were sent by other users to you
- */
-window.cytubeEnhanced.addModule('pmHistory', function (app) {
-    'use strict';
 
-    var that = this;
-
-
-    window.socket.on('chatMsg', function (data) {
-        if (window.CLIENT.name && data.msg.toLowerCase().indexOf(window.CLIENT.name.toLowerCase()) != -1) {
-            var pmHistory = JSON.parse(app.userConfig.get('pmHistory') || '[]') || [];
-            if (!$.isArray(pmHistory)) {
-                pmHistory = [];
-            }
-
-            if (pmHistory.length >= 50) {
-                pmHistory.slice(0, 49);
-            }
-
-            pmHistory.unshift({
-                username: data.username.replace(/[^\w-]/g, '\\$'),
-                msg: data.msg,
-                time: data.time
-            });
-
-            app.userConfig.set('pmHistory', JSON.stringify(pmHistory));
-        }
-    });
-
-
-
-    this.formatHistoryMessage = function (data) {
-        var $messageWrapper = $('<div class="pm-history-message">');
-
-
-        var time = (new Date(data.time));
-
-        var day = time.getDate();
-        day = day < 10 ? ('0' + day) : day;
-        var month = time.getMonth();
-        month = month < 10 ? ('0' + month) : month;
-        var year = time.getFullYear();
-        var hours = time.getHours();
-        hours = hours < 10 ? ('0' + hours) : hours;
-        var minutes = time.getMinutes();
-        minutes = minutes < 10 ? ('0' + minutes) : minutes;
-        var seconds = time.getSeconds();
-        seconds = seconds < 10 ? ('0' + seconds) : seconds;
-
-        var timeString = day + '.' + month + '.' + year + ' ' + hours + ':' + minutes + ':' + seconds;
-
-
-
-        $messageWrapper.append($('<div class="pm-history-message-time">[' + timeString + ']</div>'));
-        $messageWrapper.append($('<div class="pm-history-message-username">' + data.username + '</div>'));
-        $messageWrapper.append($('<div class="pm-history-message-content">' + data.msg + '</div>'));
-
-
-        return $messageWrapper;
-    };
-
-    this.showChatHistory = function () {
-        var $modalWindow;
-        var pmHistory = JSON.parse(app.userConfig.get('pmHistory') || '[]') || [];
-        if (!$.isArray(pmHistory)) {
-            pmHistory = [];
-        }
-
-
-        var $wrapper = $('<div class="pm-history-content">');
-        for (var position = 0, historyLength = pmHistory.length; position < historyLength; position++) {
-            $wrapper.append(that.formatHistoryMessage(pmHistory[position]));
-        }
-
-
-        var $resetChatHistoryBtn = $('<button type="button" id="pm-history-reset-btn" class="btn btn-danger">' + app.t('pmHistory[.]Reset history') + '</button>')
-            .on('click', function () {
-                if (window.confirm('pmHistory[.]Are you sure, that you want to clear messages history?')) {
-                    that.resetChatHistory($modalWindow);
-                }
-            });
-        var $exitChatHistoryBtn = $('<button type="button" id="pm-history-exit-btn" class="btn btn-info">' + app.t('pmHistory[.]Exit') + '</button>')
-            .on('click', function () {
-                $modalWindow.modal('hide');
-            });
-        var $footer = $('<div class="pm-history-footer">');
-        $footer.append($resetChatHistoryBtn);
-        $footer.append($exitChatHistoryBtn);
-
-
-        app.getModule('utils').done(function (utilsModule) {
-            $modalWindow = utilsModule.createModalWindow(app.t('pmHistory[.]Chat history'), $wrapper, $footer);
-        });
-    };
-
-    this.$showChatHistoryBtn = $('<span id="pm-history-btn" class="btn btn-sm btn-default pointer">')
-        .text(app.t('pmHistory[.]History'))
-        .appendTo('#chatheader')
-        .on('click', function () {
-            that.showChatHistory();
-        });
-
-
-
-    this.resetChatHistory = function ($modalWindow) {
-        app.userConfig.set('pmHistory', JSON.stringify([]));
-
-        if ($modalWindow != null) {
-            $modalWindow.modal('hide');
-        }
-    };
-});
 },{}],14:[function(require,module,exports){
 window.cytubeEnhanced.addModule('showVideoInfo', function (app) {
     'use strict';
@@ -2112,90 +1878,7 @@ window.cytubeEnhanced.addModule('showVideoInfo', function (app) {
     });
 });
 
-},{}],15:[function(require,module,exports){
-window.cytubeEnhanced.addModule('smiles', function (app) {
-    'use strict';
 
-    var that = this;
-
-
-    if ($('#chat-panel').length === 0) {
-        $('<div id="chat-panel" class="row">').insertAfter("#main");
-    }
-
-    if ($('#chat-controls').length === 0) {
-        $('<div id="chat-controls" class="">').appendTo("#chatwrap");
-    }
-
-
-    $('#emotelistbtn').hide();
-
-
-    this.$smilesBtn = $('<button id="smiles-btn" class="btn btn-sm btn-default" title="' + app.t('emotes[.]Show emotes') + '">')
-        .html('<i class="glyphicon glyphicon-picture"></i>')
-        .prependTo('#chat-controls');
-
-
-    this.$smilesPanel = $('<div id="smiles-panel" class="section">')
-        .prependTo('#chat-panel')
-        .hide();
-
-
-    this.renderSmiles = function () {
-        var smiles = window.CHANNEL.emotes;
-
-        for (var smileIndex = 0, smilesLen = smiles.length; smileIndex < smilesLen; smileIndex++) {
-            $('<img class="smile-on-panel">')
-                .attr({src: smiles[smileIndex].image})
-                .data('name', smiles[smileIndex].name)
-                .appendTo(this.$smilesPanel);
-        }
-    };
-
-
-    this.insertSmile = function (smileName) {
-        app.getModule('utils').done(function (utilsModule) {
-            utilsModule.addMessageToChatInput(' ' + smileName + ' ', 'end');
-        });
-    };
-    $(document.body).on('click', '.smile-on-panel', function () {
-        that.insertSmile($(this).data('name'));
-    });
-
-
-    this.handleSmileBtn = function ($smilesBtn) {
-        var smilesAndPicturesTogether = this.smilesAndPicturesTogether || false; //setted up by userConfig module
-
-        if ($('#favourite-pictures-panel').length !== 0 && !smilesAndPicturesTogether) {
-            $('#favourite-pictures-panel').hide();
-        }
-
-        this.$smilesPanel.toggle();
-
-        if (!smilesAndPicturesTogether) {
-            if ($smilesBtn.hasClass('btn-default')) {
-                if ($('#favourite-pictures-btn').length !== 0 && $('#favourite-pictures-btn').hasClass('btn-success')) {
-                    $('#favourite-pictures-btn').removeClass('btn-success');
-                    $('#favourite-pictures-btn').addClass('btn-default');
-                }
-
-                $smilesBtn.removeClass('btn-default');
-                $smilesBtn.addClass('btn-success');
-            } else {
-                $smilesBtn.removeClass('btn-success');
-                $smilesBtn.addClass('btn-default');
-            }
-        }
-    };
-    this.$smilesBtn.on('click', function() {
-        that.handleSmileBtn($(this));
-    });
-
-
-
-
-    this.renderSmiles();
-});
 
 },{}],16:[function(require,module,exports){
 window.cytubeEnhanced.addModule('userControlPanel', function (app, settings) {
@@ -2893,15 +2576,16 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
         turnOffVideoOption: true,
         selectQualityOption: true,
         expandPlaylistOption: true,
-        showVideoContributorsOption: true,
+        showVideoContributorsOption: false,
         playlistHeight: 500
     };
     settings = $.extend({}, defaultSettings, settings);
 
-    $('#mediarefresh').hide();
+    //$('#mediarefresh').hide();
 
 
-    this.$topVideoControls = $('<div id="top-video-controls" class="btn-group">').appendTo("#nav-collapsible");
+    this.$topVideoControls = $('<div id="top-video-controls" class="btn-group">').appendTo("#chatsettings");
+//$("#topVideoControls").after($("#top-video-controls"));
 
     this.refreshVideo = function () {
         $('#mediarefresh').click();
@@ -2944,7 +2628,7 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
 
 
     this.qualityLabelsTranslate = {
-        auto: 'ass',
+        auto: 'auto',
         240: '240p',
         360: '360p',
         480: '480p',
@@ -3038,9 +2722,9 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
             window.scrollQueue();
         }
     };
-    this.$expandPlaylistBtn = $('<button id="expand-playlist-btn" class="btn btn-sm btn-default" data-expanded="0" title="' + app.t('video[.]Expand playlist') + '">')
+    this.$expandPlaylistBtn = $('<button id="expand-playlist-btn" class="navbar-nav btn btn-sm btn-default" data-expanded="0" title="' + app.t('video[.]Expand playlist') + '">')
         .append('<span class="glyphicon glyphicon-resize-full">')
-        .prependTo('#videocontrols')
+        .prependTo('#upnext')
         .on('click', function() {
             that.expandPlaylist($(this));
         });
@@ -3049,9 +2733,9 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
     }
 
 
-    this.$scrollToCurrentBtn = $('<button id="scroll-to-current-btn" class="btn btn-sm btn-default" title="' + app.t('video[.]Scroll the playlist to the current video') + '">')
+    this.$scrollToCurrentBtn = $('<button id="scroll-to-current-btn" class="navbar-nav btn btn-sm btn-default" title="' + app.t('video[.]Scroll the playlist to the current video') + '">')
         .append('<span class="glyphicon glyphicon-hand-right">')
-        .prependTo('#videocontrols')
+        .prependTo('#upnext')
         .on('click', function() {
             window.scrollQueue();
         });
@@ -3096,78 +2780,6 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
     }
 });
 
-},{}],19:[function(require,module,exports){
-/**
- * Fork of https://github.com/mickey/videojs-progressTips
- */
-window.cytubeEnhanced.addModule('videojsProgress', function () {
-    'use strict';
-
-    var that = this;
-
-   // this.$Skip = $(".vjs-error-display").append($("#voteskip"));
-    this.$Pre = $("#ytapiplayer_html5_api").attr("preload", "false");
-    
-    this.handleProgress = function () {
-        if (window.PLAYER instanceof window.VideoJSPlayer) {
-            if (window.PLAYER.player.techName === 'Html5' || window.PLAYER.player.Ua === 'Html5') { //Ua is uglifier mangle
-                var $tipWrapper = $('<div class="vjs-tip">').insertAfter('.vjs-progress-control');
-                var $tipBody = $('<div class="vjs-tip-body">').appendTo($tipWrapper);
-                $('<div class="vjs-tip-body-arrow">').appendTo($tipBody);
-                var $tipInner = $('<div class="vjs-tip-body-inner">').appendTo($tipBody);
-
-                $('.vjs-progress-control').on('mousemove', function(e) {
-                    var $seekBar = $(window.PLAYER.player.controlBar.progressControl.seekBar.el());
-                    var pixelsInSecond = $seekBar.outerWidth() / window.PLAYER.player.duration();
-                    var mousePositionInPlayer = e.pageX - $seekBar.offset().left;
-
-                    var timeInSeconds = mousePositionInPlayer / pixelsInSecond;
-
-
-                    var hours = Math.floor(timeInSeconds / 3600);
-
-                    var minutes = hours > 0 ? Math.floor((timeInSeconds % 3600) / 60) : Math.floor(timeInSeconds / 60);
-                    if (minutes < 10 && hours > 0) {
-                        minutes = '0' + minutes;
-                    }
-
-                    var seconds = Math.floor(timeInSeconds % 60);
-                    if (seconds < 10) {
-                        seconds = '0' + seconds;
-                    }
-
-                    if (hours > 0) {
-                        $tipInner.text(hours + ':' + minutes + ':' + seconds);
-                    } else {
-                        $tipInner.text(minutes + ":" + seconds);
-                    }
-
-                    $tipWrapper.css('top', -($('.vjs-control-bar').height() + $('.vjs-progress-control').height()) + 'px')
-                        .css('left', (e.pageX - $('.vjs-control-bar').offset().left - $tipInner.outerWidth() / 2)+ 'px')
-                        .show();
-                });
-                
-                 //$("#ytapiplayer_html5_api").attr("preload", "auto");
-                 //$(".vjs-error-display").append($("#voteskip"));
-                 
-                $('.vjs-progress-control, .vjs-play-control').on('mouseout', function() {
-                    $tipWrapper.hide();
-                });
-            }
-        }
-    };
-
-    this.handleProgress();
-    window.socket.on('changeMedia', function () {
-        that.handleProgress();
-    });
-});
-$("#messagebuffer").before("<div class='menu2bar'></div>");
-$(".menu2bar").append($("#afk-btn"));
-$(".menu2bar").append($("#clear-chat-btn"));
-$(".menu2bar").append($("#pm-history-btn"));
-//$(".vjs-error-display").append($("#voteskip"));
-
 function reload() { 
    video.load(); 
 }
@@ -3176,5 +2788,5 @@ videojs("ytapiplayer_html5_api").ready(function(){
     this.volume(1);
 });
 
-},{}]},{},[4,3,5,7,16,19]);
+},{}]},{},[4,3,5,7,18]);
 }
