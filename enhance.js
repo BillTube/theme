@@ -2573,7 +2573,7 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
     var that = this;
 
     var defaultSettings = {
-        turnOffVideoOption: true,
+        turnOffVideoOption: false,
         selectQualityOption: true,
         expandPlaylistOption: true,
         showVideoContributorsOption: false,
@@ -2586,18 +2586,6 @@ window.cytubeEnhanced.addModule('videoControls', function (app, settings) {
 
     this.$topVideoControls = $('<div id="top-video-controls" class="btn-group">').appendTo("#chatsettings");
 //$("#topVideoControls").after($("#top-video-controls"));
-
-    this.refreshVideo = function () {
-        $('#mediarefresh').click();
-    };
-    this.$refreshVideoBtn = $('<button id="refresh-video" class="btn btn-sm btn-default" title="' + app.t('video[.]Refresh video') + '">')
-        .html('<i class="glyphicon glyphicon-refresh">')
-        .appendTo(this.$topVideoControls)
-        .on('click', function () {
-            that.refreshVideo();
-        });
-
-
     this.hidePlayer = function ($hidePlayerBtn) {
         if ($hidePlayerBtn.hasClass('btn-default')) { //video visible
             var $playerWindow = $('#videowrap').find('.embed-responsive');
