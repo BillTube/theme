@@ -2731,3 +2731,14 @@ input#colorID {margin-right: 10px;width: 59px;}
     filter: grayscale(10%)!important;
     -webkit-filter: grayscale(10%)!important;
 }
+#queue li[visible='true']{
+  display:flex;
+}
+#queue li[visible='false'],
+.no-result{
+  display:none;
+}
+.pls {
+width:100%;
+ margin: 8px;
+}
