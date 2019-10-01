@@ -1192,8 +1192,8 @@ img.kek:hover {
 /* Inputs */
 	/* Text Inputs */
 	input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
-    background-color: hsla(0, 0%, 6%, 0.98)!important;
-    border-top: 1px solid hsla(0, 0%, 29%, 0.11);
+    background-color: hsla(0, 1%, 4%, 0.98)!important;
+    border-top: 1px solid hsla(0, 3%, 21%, 0.58);
     color: hsl(0, 0%, 83%);
 	font-size: 12px;
     -webkit-font-smoothing: antialiased
