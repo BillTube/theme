@@ -697,7 +697,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53755606-1', 'auto');
 ga('send', 'pageview');
 
-var bgColorArray = ['https://lh3.googleusercontent.com/vHQ3IXBYkiiCp6YEh8ECypwoQfB16vGw6erOHejr6RXpywvdJ1KJmmN-JeaJuN4w4R2ActgC91OpKHl0aQ=w1596-h898-rw-no','https://lh3.googleusercontent.com/hWyUDFmvz2F9JHRnzqgJIAxIXVkNrTwmv1dOYX6rKHxtwHi2f_bIw4Js7IsFfTOV3z1yOLc4k2rg_IZqRQ=w901-h507-rw-no','https://lh3.googleusercontent.com/ltV8j6gy_fZNM3YsM77aq3qKANyJ3YnA4IgsK7ZolBLW5Z_9P1TrhHl9paq0gFq-FaHl4r7F65jponaBeA=w901-h507-rw-no','https://lh3.googleusercontent.com/PPD-da6C5d3jbx5104QpQBoeV6ZVpzbwIZ0CSl8ELlOjI72g4QxtApowko1FfZVgImaQD6RFRmO3CQKaYw=w901-h507-rw-no'],
+var bgColorArray = ['https://lh3.googleusercontent.com/PxAJ6dqghRmnq-u_puWMNSNJEckEIhPhguJTEcbarqis98yLp5n4trMVfIlQ7q3RgZDU7Wuhk7GL3_RaroGvtrU9a-Go3hTME4Kz9Md_jXo1lwzPqPRA3S9XtIL7W8PSRZmj_qrfwyMU706Fd3JnA9M8dLRZ-cftKJzxSMeKNZGZEOnP74D5ZKRMOUhHpywlgo08_lWFfXW9rlvUOL3t9q3Ts0ECZXznEpUz5d5ifITyS8CuTAminQec3meDm_5A4KQdjHoPsLzUjYl6lUu8FWHRiAmJLH0bzUVyvjObftOBYuz41G5bytL_JFXSBomBx6XgTPPQofC7MniEKZMPzcrJrZ7LuPFgibbB6zLGcF7pQWLNH09Y54V9LJIKRhmBa4p29vFr6l4iYDAaIApx4F6RYJmqlyA1V1uQYZto7bYhFUxpGCrtL-59Fkh7N0BtDH70CK2BBDgjuKBbiBnae8t4W60MN98dILt53YZ5XzH0SiJoVXtsXwbBCEH9BS90CjolqZ8WBsmEHpzMxn-W9RjPb2OVpXpaemnVoeXS9MDflMrWbV3OmGSNBRLyhm7pVeT4o5XXlDEmNf2xj0nQqgST4jxrUKJupoEvYsKu5OZfcGQksP3KIALbmhyHPrvL9y9IUC4e18STAwtN-bhrGG8Ep7NZd-z-NjG9y296m4ucgH4eFJfKlA=w1236-h695-no',
 
 selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 $('#backg').css('background', 'url(' + selectBG + ')')
