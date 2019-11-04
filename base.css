@@ -2211,10 +2211,6 @@ min-width: 50px;
     height: 100%;
     margin-top: 0;
     margin-left: 0;
-  -webkit-filter: blur(8px);
-  filter: url('#blur'); /*Firefox Support for Blur*/
-  filter: blur(8px);
-
 }
 
 .container {
