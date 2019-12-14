@@ -12,11 +12,11 @@ $("#main").after(
   '<a href="https://cytu.be/r/seinfeldHD"><img src="//s14.postimg.cc/yv5y9gqz5/w3_WPXIa.png" class="kek" /></a>' +
    '<a href="https://cytu.be/r/Simpsons"><img src="//i.postimg.cc/8CqBZg1z/simps.png" class="kek" /></a>' +
      '<a href="https://cytu.be/r/billcartoon"><img src="//s14.postimg.cc/c6gr9whb5/Bdr_UNQZ.png" class="kek" /></a>' +
-    '<a href="https://cytu.be/r/spooktober"><img src="//i.imgsafe.org/22/227b6b2ec7.png" class="kek" /></a>' +
+   '<a href="https://cytu.be/r/BillTube"><img src="//s14.postimg.cc/6iagj52pt/Kzcwj_LR.png" class="kek" /></a>' +
     '<a href="https://cytu.be/r/spookyshows"><img src="//s14.postimg.cc/twifuuuv5/2_LB9834.png" class="kek" /></a>' +
     '<a href="https://cytu.be/r/spookyshows2"><img src="//i.postimg.cc/8c3GDCvK/SS2.png" class="kek" /></a>' +
   '<a href="https://cytu.be/r/buffy"><img src="//s14.postimg.cc/6iagj0koh/Gx_CKt_EZ.png" class="kek" /></a>' +
-  '<a href="https://cytu.be/r/BillTube"><img src="//s14.postimg.cc/6iagj52pt/Kzcwj_LR.png" class="kek" /></a>' +
+     '<a href="https://cytu.be/r/spooktober"><img src="//i.imgsafe.org/22/227b6b2ec7.png" class="kek" /></a>' +
    '<a href="https://cytu.be/r/animatedshows"><img src="//s14.postimg.cc/arf6l60sh/Wea_Qe7_R.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/CopsTube"><img src="//s14.postimg.cc/rf6onst0x/v_DJV3_Of.png" class="kek" /></a>' +
 
