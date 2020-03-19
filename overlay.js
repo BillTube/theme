@@ -27,12 +27,7 @@ $("#VideoOverlay").append($("#mediarefresh"));
 $("#VideoOverlay").append("<button id='hidechat' title='Hide Chat' class='btn btn-sm btn-default OLB'>Theater Mode</button>");
 $("#VideoOverlay").append("<button id='showchat' title='show Chat' class='btn btn-sm btn-default OLB'>Regular Mode</button>");
 $("#VideoOverlay").append("<button id='pipButton' title='Picture In Picture' class='btn btn-sm btn-default OLB'>PIP</button>");
-$("#VideoOverlay").append("<button id='flipButton' title='Flip the Video' class='btn btn-sm btn-default OLB hidden'>Mirror</button>");
 
-
-$("flipButton").click(function() {
-  $(ytapiplayer_html5_api).toggleClass("flip");
-});
 
 $(document).ready(function(){
 	$('#hidechat').on('click', function(){nochat();});
@@ -145,3 +140,20 @@ fsVidButton.addEventListener('click', function(e) {
   ytapiplayer_html5_api.addEventListener('leavepictureinpicture', function() {
     // Video element left Picture-In-Picture mode.
   });
+//$("#VideoOverlay").append("<button id='flipButton' title='Flip the Video' class='btn btn-sm btn-default OLB hidden'>Mirror</button>");
+//$("flipButton").click(function() {
+//  $(ytapiplayer_html5_api).toggleClass("flip");
+//});
+
+transcontrols = $('<div id="transcontrols" class="btn-group pull-right" />').appendTo("#VideoOverlay");
+
+	mirrorxbtn = $('<button id="mirrorx-btn" class="btn btn-sm btn-default OLB" title="Mirror X player" />')
+ 	  .html('<span class="glyphicon glyphicon-resize-horizontal"></span>')
+ 	  .appendTo(transcontrols)
+ 	  .on("click", function() {
+		if ($("#ytapiplayer_html5_api").hasClass('mX')) {
+			$("#ytapiplayer_html5_api").removeClass('mX');
+		} else {
+			$("#ytapiplayer_html5_api").addClass('mX');
+		}
+ 	  });
