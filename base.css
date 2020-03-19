@@ -1206,17 +1206,19 @@ img.kek:hover {
     border-bottom: 0px solid #fff;
     background-color: #0b0a0cd9!important;
 	}
-
+.form-control:focus {
+    box-shadow: none!important;
+}
 	/* Buttons */
 	.input-group .input-group-btn, .input-group .input-group-btn button {
-		background: hsl(0, 0%, 24%);
+		background: hsl(0, 0%, 10%);
 		border: 0;
 		box-shadow: none;
 		color: hsl(0, 0%, 63%);
 		-webkit-font-smoothing: antialiased
 	}
 	.input-group .input-group-btn > button {
-		border: 1px solid hsl(0,0%,31%);
+		border: 0px solid hsl(0,0%,31%);
 	}
 	.input-group .input-group-btn button:hover {
 		background: hsl(0, 0%, 14%);
@@ -1801,6 +1803,7 @@ a.qe_title {
     margin-left: 48px;
     margin-right: 20px;
     margin-bottom: 2px;
+    font-size: 1.4rem;
 }
 img.chat-avatar.chat-avatar_big {
     height: 55px;
@@ -2737,4 +2740,10 @@ input#colorID {margin-right: 10px;width: 59px;}
 .pls {
 width:100%;
  margin: 8px;
+}
+ul.Emojilist.dropdown-menu.ul-double {
+    font-size: 2rem;
+    padding: 1px;
+    width: auto;
+background-color: #191a1ff7;
 }
