@@ -27,6 +27,12 @@ $("#VideoOverlay").append($("#mediarefresh"));
 $("#VideoOverlay").append("<button id='hidechat' title='Hide Chat' class='btn btn-sm btn-default OLB'>Theater Mode</button>");
 $("#VideoOverlay").append("<button id='showchat' title='show Chat' class='btn btn-sm btn-default OLB'>Regular Mode</button>");
 $("#VideoOverlay").append("<button id='pipButton' title='Picture In Picture' class='btn btn-sm btn-default OLB'>PIP</button>");
+$("#VideoOverlay").append("<button id='flipButton' title='Flip the Video' class='btn btn-sm btn-default OLB hidden'>Mirror</button>");
+
+
+$("flipButton").click(function() {
+  $(ytapiplayer_html5_api).toggleClass("flip");
+});
 
 $(document).ready(function(){
 	$('#hidechat').on('click', function(){nochat();});
