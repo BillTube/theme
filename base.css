@@ -1917,7 +1917,10 @@ ul#queue {
 .btn-group, .btn-group-vertical {
     vertical-align: middle;
     float: right;
-    right: 40px;
+}
+.mX {
+	-webkit-transform:scaleX(-1); -moz-transform:scaleX(-1); transform:scaleX(-1);
+	-ms-transform:scaleX(-1); -o-transform:scaleX(-1);
 }
 .qe_time {
 	font-size: 13px;
