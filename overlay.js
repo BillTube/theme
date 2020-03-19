@@ -157,3 +157,10 @@ transcontrols = $('<div id="transcontrols" class="btn-group pull-right" />').app
 			$("#ytapiplayer_html5_api").addClass('mX');
 		}
  	  });
+ var style = document.createElement('style');
+  style.innerHTML = `
+  .mX {
+	-webkit-transform:scaleX(-1); -moz-transform:scaleX(-1); transform:scaleX(-1);
+	-ms-transform:scaleX(-1); -o-transform:scaleX(-1);  }
+  `;
+  document.head.appendChild(style);
