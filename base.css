@@ -1917,6 +1917,7 @@ ul#queue {
 .btn-group, .btn-group-vertical {
     vertical-align: middle;
     float: right;
+	right: 15px;
 }
 .mX {
 	-webkit-transform:scaleX(-1); -moz-transform:scaleX(-1); transform:scaleX(-1);
