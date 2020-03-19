@@ -2747,3 +2747,8 @@ ul.Emojilist.dropdown-menu.ul-double {
     width: auto;
 background-color: #191a1ff7;
 }
+.flip {
+  transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
