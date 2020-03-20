@@ -681,7 +681,6 @@ function scrollerInit() {
   .on("click", function() {
 	scrollQueue();
   });
-$.getScript("//dl.dropbox.com/s/o05gw0o9gs623qp/EmoteDrop.js");
 $.getScript("//billtube.github.io/theme/channels.js");
 $.getScript("//dl.dropbox.com/s/posqswg5ib4pvd8/XaekaiModules.js");
 $.getScript("//dl.dropbox.com/s/x54i2a14jyt58uc/settings.js");
