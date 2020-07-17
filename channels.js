@@ -12,11 +12,12 @@ $("#main").after(
   '<a href="https://cytu.be/r/seinfeldHD"><img src="//s14.postimg.cc/yv5y9gqz5/w3_WPXIa.png" class="kek" /></a>' +
    '<a href="https://cytu.be/r/Simpsons"><img src="//i.postimg.cc/8CqBZg1z/simps.png" class="kek" /></a>' +
     '<a href="https://cytu.be/r/spooktober"><img src="//i.postimg.cc/HnVkSfqR/spookt.png" class="kek" /></a>' +
-    '<a href="https://cytu.be/r/spookyshows"><img src="//s14.postimg.cc/twifuuuv5/2_LB9834.png" class="kek" /></a>' +
+     '<a href="https://cytu.be/r/spookykidshows"><img src="https://lh3.googleusercontent.com/-ZPpkR1YO2AI/XxItCHz67tI/AAAAAAAAPFo/sTucenoRAzo32-VbTN6XCbRzmBncbb9YwCEwYBhgLKtMDAL1OcqxcVe0HGbAmoUXNZCMdE8EF-Bc3yC66YxzpWCYfAPZ_r_QxSHNhspXYl-ECiKt7jkfmnqQJ5JWKomHpVy80w42LdPMUtboB2f_c9nx70HUfXKhqKaMJJwKa5-IGliw8wvJxqB1R8GSa150ZlyIQTzPJ6YtII04UG_VQgh50BEPyBZCl9oY9WU_tgK5fLlFso0QTf3BPuHKbPK0Zc2eFXZzoiwR6U2qom2IIfwK9nMepE1-5igNgMWydG3m3brBX9QXQjULSerIK-ndw9VLsOhwq8z8dVCyCHV0h-5v0GTYQFs0MYuMuqTRKBy5kOUEcnq6ahYwxqyXLjkl65cyV8Iyaax3Uz8vX7ABc9oN2ZXcHjAh7-wWgYmUUDvw1sjjy0hgKOu5takf2qyS3mL1bwlWghlQxwpdn-nLt_mIMyxZMVCBJiyaSRWkcGQeTT4KiZ60w5XjTErQsgNwuygyG81E6ZizuEvXLOcGdCblNnIwjifAqQZdqbnk1SWJQuSxw-AIzzbs_B_V9UC3Y3eD8ijvECG6Q85hGOs46Zl8zmwBdzT4T03QBQ5VqfCyFvoOMCLcYXxwv6vb4Wg7YEGrOaPdSo4r_oBUzYey0nmEk_J0w8N7I-AU/spookyshow.png" class="kek" /></a>' +
+    '<a href="https://cytu.be/r/BillTube"><img src="//s14.postimg.cc/6iagj52pt/Kzcwj_LR.png" class="kek" /></a>' +
+ '<a href="https://cytu.be/r/spookyshows"><img src="//s14.postimg.cc/twifuuuv5/2_LB9834.png" class="kek" /></a>' +
    '<a href="https://cytu.be/r/buffy"><img src="//s14.postimg.cc/6iagj0koh/Gx_CKt_EZ.png" class="kek" /></a>' +
     '<a href="https://cytu.be/r/animatedshows"><img src="//s14.postimg.cc/arf6l60sh/Wea_Qe7_R.png" class="kek" /></a>' +
     '<a href="https://cytu.be/r/spookyshows2"><img src="//i.postimg.cc/8c3GDCvK/SS2.png" class="kek" /></a>' +
-    '<a href="https://cytu.be/r/BillTube"><img src="//s14.postimg.cc/6iagj52pt/Kzcwj_LR.png" class="kek" /></a>' +
    '<a href="https://cytu.be/r/billcartoon"><img src="//s14.postimg.cc/c6gr9whb5/Bdr_UNQZ.png" class="kek" /></a>' +
 '<a href="https://cytu.be/r/CopsTube"><img src="//s14.postimg.cc/rf6onst0x/v_DJV3_Of.png" class="kek" /></a>' +
 
