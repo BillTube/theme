@@ -2759,3 +2759,21 @@ background-color: #191a1ff7;
 #textEmotes {
     display: none;
 }
+
+/* Fix the styling of the shitty Gdrive subs */
+
+.video-js video::-webkit-media-text-track-container {
+    bottom: 30px!important;
+    font-size: 2.3rem!Important;
+	line-height:33px !important;
+    text-shadow: 1px 1px 2px #000000;
+	background: transparent !important;
+}
+
+video::cue  {
+	background-color: rgba(0, 0, 0, 0.1)!important;
+}
+::cue {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
